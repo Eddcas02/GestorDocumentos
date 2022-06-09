@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+using KB_Guadalupana.Controllers;
+using System.Data;
+using MySql.Data.MySqlClient;
+
+namespace KB_Guadalupana.Views.EP.Ventanas
+{
+    public partial class Ventanacuentaspp : System.Web.UI.Page
+    {
+        ModeloEST mest = new ModeloEST();
+        Conexion conexiongeneral = new Conexion();
+        loteval lt = new loteval();
+        string cifglobal, usernombre, lote;
+
+        protected void btnguardarcuentas_Click(object sender, EventArgs e)
+        {
+            if (ColaboradorActivoCXCOrigen.Text != "" && ColaboradorPasivoCXPDescripcio.Text != "" && ColaboradorPasivoCXPMonto.Text != "")
+            {
+                string[] infolote = lt.lotevalido();
+                string ult = mest.obtenerultimo("EP_ColaboradorPasivoCXP", "ColaboradorPasivoCXPID");
+
+                string c1 = ColaboradorPasivoCXPMonto.Text;
+                decimal d1 = Convert.ToDecimal(c1.Replace(",", ""));
+
+                mest.executesql("INSERT INTO `EP_ColaboradorPasivoCXP`(`LoteID`, `ColaboradorID`, `ColaboradorPasivoCXPID`, `ColaboradorPasivoCXPOrigen`, `ColaboradorPasivoCXPDescripcio`, `ColaboradorPasivoCXPMonto`) " +
+                    " VALUES ('" + lote + "','" + cifglobal + "','" + ult + "','" + ColaboradorActivoCXCOrigen.Text + "','" + ColaboradorPasivoCXPDescripcio.Text + "','" + d1 + "')");
+
+                ColaboradorActivoCXCOrigen.Text = "";
+                ColaboradorPasivoCXPDescripcio.Text = "";
+                ColaboradorPasivoCXPMonto.Text = "";
+                lblSuccessMessage1.Visible = true;
+                lblerror.Visible = false;
+
+            }
+            else {
+                lblerror.Visible = true;
+                lblSuccessMessage1.Visible = false;
+            }
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            lote = Convert.ToString(Session["lotepasa"]);
+            usernombre = Convert.ToString(Session["sesion_usuario"]);
+
+            cifglobal = mest.idusuariogeneral(usernombre);
+            
+        }
+    }
+}

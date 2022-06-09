@@ -1,0 +1,141 @@
+﻿.stepsbar {
+    padding: 1em 0;
+    width: 78%;
+    height: 42px;
+}
+
+    .stepsbar ol {
+        overflow: hidden;
+        margin: 0;
+        padding: 1em 0;
+        list-style: none;
+        line-height: 1.2;
+        font-size: 1em;
+        counter-reset: li;
+        animation: chase 1s 1 forwards;
+    }
+
+    .stepsbar li {
+        float: left;
+        display: inline;
+        position: relative;
+        counter-increment: li;
+        width: 18%;
+        text-align: center;
+        color: #ccc;
+        transition: all 0.5s ease;
+    }
+
+        .stepsbar li:before {
+            content: counter(li);
+            position: relative;
+            background-color: #ccc;
+            color: #fff;
+            width: 2.5em;
+            padding: 0.5em;
+            margin: 0 auto 0.5em;
+            border-radius: 100%;
+            font-size: 0.9em;
+            text-align: center;
+            display: block;
+            z-index: 2;
+            border: 1px solid #b3b3b3;
+            box-shadow: 0 0 2px 2px #fff;
+            background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-repeat: repeat;
+            background-size: 20px 20px;
+        }
+
+        .stepsbar li:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            display: block;
+            background: #ccc;
+            z-index: 1;
+            top: 50%;
+            left: 55%;
+            margin-top: -1.2em;
+            background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-repeat: repeat-x;
+            background-size: 20px 20px;
+        }
+
+        .stepsbar li:first-child.active:after {
+            left: 50%;
+        }
+
+        .stepsbar li:last-child:after {
+            display: none;
+        }
+
+        .stepsbar li.done {
+            color: #8BC53F;
+        }
+
+            .stepsbar li.done:after {
+                width: 120%;
+                background-color: #57AED1;
+                animation: progress 0.3s linear 10;
+            }
+
+            .stepsbar li.done:before {
+                background-color: #8BC53F;
+                border-color: #70a130;
+                color: white;
+            }
+
+        .stepsbar li.active {
+            width: 30%;
+            font-weight: bold;
+            color: #57AED1;
+        }
+
+            .stepsbar li.active:after {
+                width: 80%;
+            }
+
+            .stepsbar li.active:before {
+                background-color: #57AED1;
+                border: 2px solid #fff;
+                color: white;
+                box-shadow: 0 0 0 2px #57AED1;
+                animation: progress 0.5s linear infinite;
+                animation-delay: 3s;
+            }
+
+.btn {
+    display: block;
+    margin: 2em auto;
+    font-size: 1em;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background: lightblue;
+    cursor: pointer;
+}
+
+#btn1 {
+    float: left;
+}
+
+#btn2 {
+    float: right;
+}
+
+@keyframes chase {
+    from {
+        width: 80%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes progress {
+    to {
+        background-position: 20px 0;
+    }
+}
