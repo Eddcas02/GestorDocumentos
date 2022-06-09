@@ -20,17 +20,18 @@ namespace KB_Guadalupana.Views.Procesos.Ventanas
         protected void Page_Load(object sender, EventArgs e)
         {
 
-           
+
             string ident = Convert.ToString(Session["iddocumentoselec"]);
             iniciodoc(ident);
         }
 
 
-        public void iniciodoc(string iddoc){
+        public void iniciodoc(string iddoc)
+        {
             try
             {
-               
-             
+
+
                 string documentoselec = sn.obtenerrutadocumento(iddoc);
 
 
@@ -83,7 +84,7 @@ namespace KB_Guadalupana.Views.Procesos.Ventanas
                     }
                 }
             }
-            catch(Exception es)
+            catch (Exception es)
             {
                 Console.WriteLine(es.Message);
             }

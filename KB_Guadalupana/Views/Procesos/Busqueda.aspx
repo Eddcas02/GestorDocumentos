@@ -278,45 +278,7 @@
                                         
                                     </ItemTemplate>
                                 </asp:TemplateField>  
-                                 <asp:TemplateField ControlStyle-CssClass="diseño"  HeaderText="Origen">
-                                    <ItemTemplate>
-                                  
-                                         <div id="divh" runat="server"  style="text-align: center;" >
-           
-                      
-
                              
-
-                             <cc1:ModalPopupExtender ID="mp1" runat="server" PopupControlID="Panl1" TargetControlID="iddoc"
-                                BackgroundCssClass="Background" >
-                            </cc1:ModalPopupExtender>
-
-                             <asp:Panel ID="Panl1" runat="server" CssClass="Popup" align="center" style = "display:none">
-                                  <asp:Button ID="Button2" 
-                                      CssClass="btn1" class="cierre" 
-                                      Width="30%" runat="server"  
-                                      Text="Cerrar" OnClick="Button2_Click" />    <iframe style=" width: 100%; height: 100%;" id="irm1" src="~/Views/Procesos/VentanaVista.aspx" runat="server" ></iframe>
-                             <br/>
-                           
-                            </asp:Panel>
-
-                        <cc1:AnimationExtender ID="popupAnimation" runat="server" TargetControlID="iddoc">
-        <Animations>
-                <OnClick>
-                    <Parallel AnimationTarget="Panl1" 
-                    Duration="0.3" Fps="60">
-                    <FadeIn />                                        
-                    <Move Horizontal="0" Vertical="0"></Move>
-                    </Parallel>                   
-                </OnClick>
-        </Animations>
-    </cc1:AnimationExtender>
-
-                       
-                         </div>
-                                        
-                                    </ItemTemplate>
-                                </asp:TemplateField>
                                 
                                 <asp:ButtonField   Text="Ver Documento" ItemStyle-CssClass="fas fa-search" CommandName="Select" ItemStyle-Width="90px" ControlStyle-ForeColor="Black">
                                     <ItemStyle Width="135px" ForeColor="Black"></ItemStyle>
@@ -332,6 +294,41 @@
 
 
         </div>
+        <asp:LinkButton Text="text" runat="server" ID="po"  />
+        
+                                         <div id="divh" runat="server"  style="text-align: center;" >
+           
+                      
+
+                             
+
+                             <cc1:ModalPopupExtender ID="mp1" runat="server" PopupControlID="Panl1" TargetControlID="po"
+                                BackgroundCssClass="Background" >
+                            </cc1:ModalPopupExtender>
+
+                             <asp:Panel ID="Panl1" runat="server" CssClass="Popup" align="center" style = "display:none">
+                                  <asp:Button ID="Button2" 
+                                      CssClass="btn1" class="cierre" 
+                                      Width="30%" runat="server"  
+                                      Text="Cerrar" OnClick="Button2_Click" />    <iframe style=" width: 100%; height: 100%;" id="irm1" src="~/Views/Procesos/VentanaVista.aspx" runat="server" ></iframe>
+                             <br/>
+                           
+                            </asp:Panel>
+
+                       <%-- <cc1:AnimationExtender ID="popupAnimation" runat="server" TargetControlID="po">
+        <Animations>
+                <OnClick>
+                    <Parallel AnimationTarget="Panl1" 
+                    Duration="0.3" Fps="60">
+                    <FadeIn />                                        
+                    <Move Horizontal="0" Vertical="0"></Move>
+                    </Parallel>                   
+                </OnClick>
+        </Animations>
+    </cc1:AnimationExtender>--%>
+
+                       
+                         </div>
 
 
       

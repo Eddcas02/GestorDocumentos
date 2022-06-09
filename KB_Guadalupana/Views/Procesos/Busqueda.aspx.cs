@@ -188,6 +188,7 @@ namespace KB_Guadalupana.Views.Procesos
 
         protected void OnSelectedIndexChangedDocumento(object sender, EventArgs e)
         {
+
             try
             {
                 string id = Convert.ToString((gridViewDocumentos.SelectedRow.FindControl("lblid") as Label).Text);
@@ -405,14 +406,23 @@ namespace KB_Guadalupana.Views.Procesos
 
         protected void iddoc_Click(object sender, EventArgs e)
         {
-            LinkButton btn = (LinkButton)sender;
-            GridViewRow row = (GridViewRow)btn.NamingContainer;
-            int i = Convert.ToInt32(row.RowIndex);
+            try {
 
-           string dato =  Convert.ToString((row.FindControl("lblid") as Label).Text);
-            Session["iddocumentoselec"] = dato;
+                LinkButton btn = (LinkButton)sender;
+                GridViewRow row = (GridViewRow)btn.NamingContainer;
+                int i = Convert.ToInt32(row.RowIndex);
 
-            Response.Redirect("ventanaVista.aspx");
+                string dato = Convert.ToString((row.FindControl("lblid") as Label).Text);
+                Session["iddocumentoselec"] = dato;
+
+                mp1.Show();
+            }
+            catch(Exception es) {
+
+                Console.WriteLine(es.Message);
+            }
+        
+           
         }
 
         protected void gridViewDocumentos_RowDeleting(object sender, GridViewDeleteEventArgs e)
