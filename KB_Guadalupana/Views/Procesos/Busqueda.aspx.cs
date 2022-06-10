@@ -245,9 +245,9 @@ namespace KB_Guadalupana.Views.Procesos
                     }
                 }
             }
-            catch
+            catch(Exception es)
             {
-
+                Console.WriteLine(es.Message);
             }
         }
 

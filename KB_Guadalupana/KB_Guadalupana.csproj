@@ -1045,6 +1045,7 @@
     <Content Include="Views\Procesos\BusquedaGeneral.aspx" />
     <Content Include="Views\Procesos\DocumentosAEditar.aspx" />
     <Content Include="Views\Procesos\EditarDocumentos.aspx" />
+    <Content Include="Views\Procesos\Estaticos\Modales.css" />
     <Content Include="Views\Procesos\MantenimientoAreas.aspx" />
     <Content Include="Views\Procesos\MantenimientoUsuarios.aspx" />
     <Content Include="Views\Procesos\MDIprocesos.aspx" />
