@@ -23,11 +23,12 @@
         .formularioCobros{
             display:compact;
             flex-direction:column;
-            width:1150px;
+            width:1170px;
             justify-items: center;
             align-content: center;
             justify-content: center;
             align-items: center;
+
         }
 
         .general{

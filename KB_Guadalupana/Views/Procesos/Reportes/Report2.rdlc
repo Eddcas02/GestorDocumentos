@@ -6,16 +6,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.11736cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>8.61283cm</Width>
+              <Width>8.22477cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.09431cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.16486cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -313,11 +313,13 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <RepeatColumnHeaders>true</RepeatColumnHeaders>
+        <RepeatRowHeaders>true</RepeatRowHeaders>
         <DataSetName>DataSetUsuarios</DataSetName>
-        <Top>4.94453cm</Top>
-        <Left>3.20176cm</Left>
+        <Top>4.62703cm</Top>
+        <Left>4.15426cm</Left>
         <Height>1.2cm</Height>
-        <Width>16.11283cm</Width>
+        <Width>15.6013cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -344,8 +346,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox9</rd:DefaultName>
-        <Top>3.28648cm</Top>
-        <Left>7.46564cm</Left>
+        <Top>2.33398cm</Top>
+        <Left>8.10064cm</Left>
         <Height>0.81167cm</Height>
         <Width>8.30319cm</Width>
         <ZIndex>1</ZIndex>
@@ -364,7 +366,7 @@
         <Value>logosion</Value>
         <Sizing>FitProportional</Sizing>
         <Top>0.37028cm</Top>
-        <Left>1.23472cm</Left>
+        <Left>0.91722cm</Left>
         <Height>3.10472cm</Height>
         <Width>3.28083cm</Width>
         <ZIndex>2</ZIndex>
@@ -380,11 +382,11 @@
   </Body>
   <Width>8.73611in</Width>
   <Page>
-    <PageHeight>29.7cm</PageHeight>
-    <PageWidth>21cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
+    <PageHeight>21cm</PageHeight>
+    <PageWidth>29.7cm</PageWidth>
+    <LeftMargin>1.5cm</LeftMargin>
     <RightMargin>2cm</RightMargin>
-    <TopMargin>2cm</TopMargin>
+    <TopMargin>0.5cm</TopMargin>
     <BottomMargin>2cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
     <Style />
