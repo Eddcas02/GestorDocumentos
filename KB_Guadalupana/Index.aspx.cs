@@ -68,7 +68,7 @@ namespace Login_Web
             //}
 
             Session["sesion_usuario"] = "pgaortiz";
-            Session["Nombre"] = "Aida Jimena Ortiz Delgado";
+            Session["Nombre"] = "Edgar Ruben Casasola Bacehz";
             Response.Redirect("Views/Sesion/MenuBarra.aspx");
         }
 
