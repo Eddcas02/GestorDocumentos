@@ -195,7 +195,7 @@ namespace KB_Guadalupana.Views.Procesos
                 Session["iddocumentoselec"] = id;
                 string documentoselec = sn.obtenerrutadocumento(id);
 
-
+               
 
                 string nombrearchivo = sn.nombrearchivo(id);
                 string[] extension = nombrearchivo.Split('.');
@@ -209,9 +209,10 @@ namespace KB_Guadalupana.Views.Procesos
                 {
                     if (tipo.ToLower() == "pdf")
                     {
-                        Response.ContentType = "application/pdf";
-                        Response.AddHeader("content-length", FileBuffer.Length.ToString());
-                        Response.BinaryWrite(FileBuffer);
+                        Session["iddocumentoselec"] = id;
+
+                        mp1.Show();
+
                     }
                     else if (tipo.ToLower() == "tif" || tipo.ToLower() == "tiff")
                     {
@@ -227,9 +228,20 @@ namespace KB_Guadalupana.Views.Procesos
                     }
                     else if (tipo.ToLower() == "xlsx" || tipo.ToLower() == "xls")
                     {
-                        Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-                        Response.AddHeader("content-length", FileBuffer.Length.ToString());
-                        Response.BinaryWrite(FileBuffer);
+
+                        string attachment = "attachment; filename=" + extension[0] + ".xlsx";
+                        Response.ClearContent();
+                        Response.AddHeader("content-disposition", attachment);
+                        Response.ContentType = "application/ms-excel";
+
+                        Response.WriteFile(FilePath);
+
+                        Response.End();
+                        //Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                        //Response.AddHeader("content-length", FileBuffer.Length.ToString());
+
+
+                        //Response.BinaryWrite(FileBuffer);
                     }
                     else if (tipo.ToLower() == "png")
                     {
@@ -245,9 +257,9 @@ namespace KB_Guadalupana.Views.Procesos
                     }
                 }
             }
-            catch(Exception es)
+            catch
             {
-                Console.WriteLine(es.Message);
+
             }
         }
 
@@ -406,6 +418,10 @@ namespace KB_Guadalupana.Views.Procesos
 
         protected void iddoc_Click(object sender, EventArgs e)
         {
+
+
+
+
             try {
 
                 LinkButton btn = (LinkButton)sender;

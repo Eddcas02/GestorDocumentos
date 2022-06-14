@@ -385,7 +385,7 @@ namespace KB_Guadalupana.Controllers
                 {
                     //"SELECT * FROM " + tabla + " where" + campo + "='" + dato + "';"
                     sqlCon.Open();
-                    MySqlCommand command = new MySqlCommand("SELECT pro_nombre AS Categoria FROM pro_categoria ORDER BY pro_nombre DESC", sqlCon);
+                    MySqlCommand command = new MySqlCommand("SELECT pro_nombre AS Categoria FROM pro_categoria ORDER BY idpro_categoria ASC", sqlCon);
                     MySqlDataAdapter ds = new MySqlDataAdapter();
                     ds.SelectCommand = command;
                     ds.Fill(ds1);
@@ -532,7 +532,7 @@ namespace KB_Guadalupana.Controllers
                 try
                 {
                     sqlCon.Open();
-                    string query = "SELECT pro_nombre FROM pro_categoria WHERE idpro_categoria = '" + idcat + "'";
+                    string query = "SELECT pro_nombre FROM pro_categoria WHERE idpro_categoria = '" + idcat + "' ORDER BY idpro_categoria";
                     MySqlCommand command = new MySqlCommand(query, sqlCon);
                     MySqlDataReader reader = command.ExecuteReader();
                     reader.Read();
