@@ -23,7 +23,7 @@
 
         body{
             font-family:'Montserrat';
-                 background-image:url("../../Imagenes/Imagenes_areas/fondo_blanco_liso.jpg");
+                 /*background-image:url("../../Imagenes/Imagenes_areas/fondo_blanco_liso.jpg");*/
           
   background-size: 100%;
         }
@@ -36,6 +36,7 @@
             align-content: center;
             justify-content: center;
             align-items: center;
+           
         }
 
         .general{
@@ -56,7 +57,7 @@
         }
 
         .linea{
-            border-bottom: 3px #69A43C solid;
+            border-bottom: 3px #32599C solid;
             height:5px;
             width:100%;
         }
@@ -128,8 +129,8 @@
             justify-content: flex-start;
         }
 
-                .boton{
-            background-color: #69A43C;
+          .boton{
+            background-color: #213C69;
             color: white;
             border:0px;
             width:45%;
@@ -138,22 +139,23 @@
         }
 
         .boton:hover {
-             background-color: white; 
-             color: black; 
-             border: 2px solid #69A43C;
+             background-color: #32599C; 
+             color: white; 
+             border: 0px;
         }
 
          .boton2{
-             background-color: white; 
-             color: black; 
-             border: 2px solid #69A43C;
+             background-color: #213C69; 
+             color: white; 
+             /*border: 2px solid #69A43C;*/
             width:45%;
             margin-top:15px;
             height: 30px;
+              border:0px;
         }
 
         .boton2:hover {
-            background-color: #69A43C;
+            background-color: #32599C;
             color: white;
             border:0px;
         }
@@ -223,7 +225,7 @@
 
                  <div class="encabezado" style="width:140%">
                     <div style="justify-content: center;display:flex" class="formato">
-                        <div style="overflow: auto; height: 400px">
+                        <div style="overflow: auto; height: 750px">
                         <asp:GridView ID="gridViewDocumentos" runat="server" AutoGenerateColumns="False" CssClass="tabla"
                             OnSelectedIndexChanged = "OnSelectedIndexChangedDocumento" BorderStyle="Solid" AllowPaging="true" PageSize="150" OnPageIndexChanging="documento_PageIndexChanging">
                              <Columns>

@@ -21,13 +21,14 @@
         }
 
         .formularioCobros{
-            display:flex;
+            display:compact;
             flex-direction:column;
-            width:750px;
+            width:1170px;
             justify-items: center;
             align-content: center;
             justify-content: center;
             align-items: center;
+
         }
 
         .general{
@@ -119,8 +120,8 @@
             justify-content: flex-start;
         }
 
-                .boton{
-            background-color: #69A43C;
+         .boton{
+            background-color: #213C69;
             color: white;
             border:0px;
             width:45%;
@@ -129,22 +130,23 @@
         }
 
         .boton:hover {
-             background-color: white; 
-             color: black; 
-             border: 2px solid #69A43C;
+             background-color: #32599C; 
+             color: white; 
+             border: 0px;
         }
 
          .boton2{
-             background-color: white; 
-             color: black; 
-             border: 2px solid #69A43C;
+             background-color: #213C69; 
+             color: white; 
+             /*border: 2px solid #69A43C;*/
             width:45%;
             margin-top:15px;
             height: 30px;
+              border:0px;
         }
 
         .boton2:hover {
-            background-color: #69A43C;
+            background-color: #32599C;
             color: white;
             border:0px;
         }
@@ -184,8 +186,8 @@
 
         /*MENU*/
         .topnav {
-  overflow: hidden;
-  background-color: #00325E;
+   overflow: hidden;
+  background-color: #313C4F;
 }
 
 .topnav a {
@@ -199,12 +201,12 @@
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #ddd;
-  color: black;
+  /*background-color: #ddd;*/
+  /*color: black;*/
 }
 
 .topnav a.active {
-  background-color: #69A43C;
+ /* background-color: #69A43C;*/
   color: white;
 }
 
@@ -242,7 +244,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #3B5C22;
+  background-color: #32599C;
   color: white;
 }
 

@@ -48,7 +48,7 @@
         }
 
         .linea{
-            border-bottom: 3px #69A43C solid;
+            border-bottom: 3px #32599C solid;
             height:5px;
             width:100%;
         }
@@ -120,7 +120,7 @@
         }
 
                 .boton{
-            background-color: #69A43C;
+            background-color: #213C69;
             color: white;
             border:0px;
             width:45%;
@@ -129,22 +129,23 @@
         }
 
         .boton:hover {
-             background-color: white; 
-             color: black; 
-             border: 2px solid #69A43C;
+             background-color: #32599C; 
+             color: white; 
+             border: 0px;
         }
 
          .boton2{
-             background-color: white; 
-             color: black; 
-             border: 2px solid #69A43C;
+             background-color: #213C69; 
+             color: white; 
+             /*border: 2px solid #69A43C;*/
             width:45%;
             margin-top:15px;
             height: 30px;
+              border:0px;
         }
 
         .boton2:hover {
-            background-color: #69A43C;
+            background-color: #32599C;
             color: white;
             border:0px;
         }

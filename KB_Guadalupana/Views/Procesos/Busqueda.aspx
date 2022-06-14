@@ -24,7 +24,7 @@
 
         body{
             font-family:'Montserrat';
-            background-image:url("../../Imagenes/Imagenes_areas/fondo_blanco_liso.jpg");
+           /* background-image:url("../../Imagenes/Imagenes_areas/fondo_blanco_liso.jpg");*/
       
   background-size: 100%;
         }
@@ -58,7 +58,7 @@
         }
 
         .linea{
-            border-bottom: 3px #69A43C solid;
+            border-bottom: 3px #32599C solid;
             height:5px;
             width:100%;
         }
@@ -130,7 +130,7 @@
         }
 
                 .boton{
-            background-color: #69A43C;
+            background-color: #213C69;
             color: white;
             border:0px;
             width:45%;
@@ -139,22 +139,24 @@
         }
 
         .boton:hover {
-             background-color: white; 
-             color: black; 
-             border: 2px solid #69A43C;
+             background-color: #32599C; 
+             color: white; 
+               border:0px;
+             /*border: 2px solid #69A43C;*/
         }
 
          .boton2{
-             background-color: white; 
-             color: black; 
-             border: 2px solid #69A43C;
+             background-color: #213C69; 
+             color: white; 
+             /*border: 2px solid #69A43C;*/
             width:45%;
             margin-top:15px;
             height: 30px;
+              border:0px;
         }
 
         .boton2:hover {
-            background-color: #69A43C;
+            background-color: #32599C;
             color: white;
             border:0px;
         }
@@ -295,7 +297,7 @@
 
 
         </div>
-        <asp:LinkButton Text="text" runat="server" ID="po"  />
+        <asp:LinkButton Text="text" cssClass="linkbtn" runat="server" ID="po"  />
         
                                          <div id="divh" runat="server"  style="text-align: center;" >
            
@@ -311,7 +313,7 @@
                                   <asp:Button ID="Button2" 
                                       CssClass="btn1" class="cierre" 
                                       Width="30%" runat="server"  
-                                      Text="Cerrar" OnClick="Button2_Click" />    <iframe style=" width: 100%; height: 100%;" id="irm1" src="~/Views/Procesos/VentanaVista.aspx" runat="server" ></iframe>
+                                      Text="Cerrar" OnClick="Button2_Click" />    <iframe style=" width: 100%; height: 100%;" id="irm1" src="~/Views/Procesos/VentanaVista.aspx#toolbar=0 "  runat="server" ></iframe>
                              <br/>
                            
                             </asp:Panel>

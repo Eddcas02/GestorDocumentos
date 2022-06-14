@@ -21,9 +21,9 @@
         }
 
         .formularioCobros{
-            display:flex;
+            display:compact;
             flex-direction:column;
-            width:750px;
+            width:930px;
             justify-items: center;
             align-content: center;
             justify-content: center;
@@ -87,7 +87,7 @@
             align-content:center;
         }
 
-        .formato{
+         .formato{
             display:flex;
             flex-direction:row;
             justify-content: space-between;
@@ -182,10 +182,10 @@
             width:5px;
         }
 
-        /*MENU*/
+       /*MENU*/
         .topnav {
-  overflow: hidden;
-  background-color: #00325E;
+   overflow: hidden;
+  background-color: #313C4F;
 }
 
 .topnav a {
@@ -199,12 +199,12 @@
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #ddd;
-  color: black;
+  /*background-color: #ddd;*/
+  /*color: black;*/
 }
 
 .topnav a.active {
-  background-color: #69A43C;
+ /* background-color: #69A43C;*/
   color: white;
 }
 
@@ -242,7 +242,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #3B5C22;
+  background-color: #32599C;
   color: white;
 }
 
