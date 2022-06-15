@@ -16,11 +16,14 @@ namespace KB_Guadalupana.Views.Procesos
     {
         Conexion conexiongeneral = new Conexion();
         Sentencia_proceso sn = new Sentencia_proceso();
+        string usuario;
         protected void Page_Load(object sender, EventArgs e)
         {
+           
+
             if (!IsPostBack)
             {
-                string usuario = Session["sesion_usuario"] as string;
+                 usuario = Session["sesion_usuario"] as string;
                 string idusuario = sn.obteneridusuario(usuario);
                 string tipousuario = sn.tipousuario(idusuario);
                 Session["nivel_usuario"] = tipousuario;
@@ -446,6 +449,130 @@ namespace KB_Guadalupana.Views.Procesos
             string id = Convert.ToString((gridViewDocumentos.SelectedRow.FindControl("lblid") as Label).Text);
             Session["iddocumentoselec"] = id;
 
+        }
+
+        protected void gridViewDocumentos_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            
+            DataTable permi = new DataTable();
+            string[] datos = new string[100];
+            int i = 0;
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                try {
+                    LinkButton lkb = (LinkButton)e.Row.FindControl("iddocdown");
+                    LinkButton lkb2 = (LinkButton)e.Row.FindControl("iddoc");
+
+                    lkb.Visible = false;
+                    lkb2.Visible = false;
+                    string iduser = sn.obteneridusuario(usuario);
+                    permi = sn.permisosuser(iduser);
+                    
+                    foreach (DataRow row in permi.Rows) {
+                     datos[i]= row["permiso"].ToString();
+
+                        i++;
+                    }
+                    
+
+                    if (datos[0] == "1")
+                    {
+
+                        lkb.Visible = true;
+                        
+                    }
+                    if (datos[1] == "2") {
+                        lkb2.Visible = true;
+
+                    }
+                }
+                catch (Exception es) {
+                    Console.WriteLine(es.Message);
+                }
+              
+
+
+            }
+
+           
+               
+            
+        }
+
+        protected void iddocdown_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string id = Convert.ToString((gridViewDocumentos.SelectedRow.FindControl("lblid") as Label).Text);
+                Session["iddocumentoselec"] = id;
+                string documentoselec = sn.obtenerrutadocumento(id);
+
+
+
+                string nombrearchivo = sn.nombrearchivo(id);
+                string[] extension = nombrearchivo.Split('.');
+                int tamaño = extension.Length;
+                string tipo = extension[tamaño - 1];
+
+                string FilePath = Server.MapPath(documentoselec);
+                WebClient User = new WebClient();
+                Byte[] FileBuffer = User.DownloadData(FilePath);
+                if (FileBuffer != null)
+                {
+                    if (tipo.ToLower() == "pdf")
+                    {
+                        Session["iddocumentoselec"] = id;
+
+                        mp1.Show();
+
+                    }
+                    else if (tipo.ToLower() == "tif" || tipo.ToLower() == "tiff")
+                    {
+                        Response.ContentType = "image/tiff";
+                        Response.AddHeader("content-length", FileBuffer.Length.ToString());
+                        Response.BinaryWrite(FileBuffer);
+                    }
+                    else if (tipo.ToLower() == "docx")
+                    {
+                        Response.ContentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+                        Response.AddHeader("content-length", FileBuffer.Length.ToString());
+                        Response.BinaryWrite(FileBuffer);
+                    }
+                    else if (tipo.ToLower() == "xlsx" || tipo.ToLower() == "xls")
+                    {
+
+                        string attachment = "attachment; filename=" + extension[0] + ".xlsx";
+                        Response.ClearContent();
+                        Response.AddHeader("content-disposition", attachment);
+                        Response.ContentType = "application/ms-excel";
+
+                        Response.WriteFile(FilePath);
+
+                        Response.End();
+                        //Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                        //Response.AddHeader("content-length", FileBuffer.Length.ToString());
+
+
+                        //Response.BinaryWrite(FileBuffer);
+                    }
+                    else if (tipo.ToLower() == "png")
+                    {
+                        Response.ContentType = "image/png";
+                        Response.AddHeader("content-length", FileBuffer.Length.ToString());
+                        Response.BinaryWrite(FileBuffer);
+                    }
+                    else if (tipo.ToLower() == "jpeg" || tipo.ToLower() == "jpg")
+                    {
+                        Response.ContentType = "image/jpeg";
+                        Response.AddHeader("content-length", FileBuffer.Length.ToString());
+                        Response.BinaryWrite(FileBuffer);
+                    }
+                }
+            }
+            catch
+            {
+
+            }
         }
     }
 }
