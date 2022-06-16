@@ -707,6 +707,27 @@ namespace KB_Guadalupana.Controllers
             }
         }
 
+        public DataTable permisosuser(string iduser)
+        {
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection sqlCon = new MySqlConnection(conexiongeneral.cadenadeconexiongeneral()))
+            {
+                try
+                {
+                    sqlCon.Open();
+                    string query = "SELECT permiso FROM `pro_permisosusuarios` WHERE gen_usuario  = '" + iduser+"'";
+                    MySqlCommand command = new MySqlCommand(query, sqlCon);
+                    MySqlDataAdapter ds = new MySqlDataAdapter();
+                    ds.SelectCommand = command;
+                    ds.Fill(dt);
+                }
+                catch (Exception ex) { Console.WriteLine(ex.Message.ToString() + " \nERROR EN CONSULTA\n -"); }
+
+                return dt;
+            }
+        }
+
         public string[] obtenerusuarioregistro(string usuario)
         {
             using (MySqlConnection sqlCon = new MySqlConnection(conexiongeneral.cadenadeconexiongeneral()))

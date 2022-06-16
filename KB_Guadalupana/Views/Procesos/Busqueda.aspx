@@ -236,9 +236,10 @@
                     <div style="justify-content: center;display:flex" class="formato">
                         <div>
                         <asp:GridView ID="gridViewDocumentos" runat="server" AutoGenerateColumns="False" CssClass="tabla"
-                            OnSelectedIndexChanged = "OnSelectedIndexChangedDocumento" OnRowDeleting="gridViewDocumentos_RowDeleting"
+                            OnSelectedIndexChanged = "OnSelectedIndexChangedDocumento" OnRowDataBound="gridViewDocumentos_RowDataBound" OnRowDeleting="gridViewDocumentos_RowDeleting"
                             BorderStyle="Solid" AllowPaging="true" PageSize="10" OnPageIndexChanging="documento_PageIndexChanging" BackColor="White">
                              <Columns>
+                                     
                                <asp:TemplateField ControlStyle-CssClass="diseño" visible="false" HeaderText="Código">
                                     <ItemTemplate>
                                        <asp:Label ID="lblid" Text='<%# Eval("Id") %>' runat="server" />
@@ -276,16 +277,17 @@
                                 </asp:TemplateField>
                                      <asp:TemplateField ControlStyle-CssClass="diseño"  HeaderText="Origen">
                                     <ItemTemplate>
-                                        <asp:LinkButton ID="iddoc" Text="Ver Doc" runat="server" OnClick="iddoc_Click" />
-
+                                        <asp:LinkButton ID="iddoc" Text="Ver Documento" runat="server" OnClick="iddoc_Click" />
+                                    <asp:LinkButton ID="iddocdown" Text="Descargar" runat="server" OnClick="iddocdown_Click" />
                                         
                                     </ItemTemplate>
                                 </asp:TemplateField>  
+                                        
                              
-                                
+                          <%--      
                                 <asp:ButtonField   Text="Ver Documento" ItemStyle-CssClass="fas fa-search" CommandName="Select" ItemStyle-Width="90px" ControlStyle-ForeColor="Black">
                                     <ItemStyle Width="135px" ForeColor="Black"></ItemStyle>
-                                </asp:ButtonField>
+                                </asp:ButtonField>--%>
                             </Columns>
                              <HeaderStyle CssClass="prueba" Height="23px" ForeColor="White" BackColor="#003563"></HeaderStyle>
                         </asp:GridView>
@@ -313,7 +315,7 @@
                                   <asp:Button ID="Button2" 
                                       CssClass="btn1" class="cierre" 
                                       Width="30%" runat="server"  
-                                      Text="Cerrar" OnClick="Button2_Click" />    <iframe style=" width: 100%; height: 100%;" id="irm1" src="~/Views/Procesos/VentanaVista.aspx#toolbar=0 "  runat="server" ></iframe>
+                                      Text="Cerrar" OnClick="Button2_Click" />    <iframe style=" width: 100%; height: 100%;" id="irm1" src="~/Views/Procesos/visordocumentos.aspx"  runat="server" ></iframe>
                              <br/>
                            
                             </asp:Panel>

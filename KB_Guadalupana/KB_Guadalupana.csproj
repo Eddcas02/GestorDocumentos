@@ -67,6 +67,12 @@
     <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
       <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
     </Reference>
+    <Reference Include="GleamTech.Common, Version=5.4.5.0, Culture=neutral, PublicKeyToken=a05198837413a6d8, processorArchitecture=MSIL">
+      <HintPath>..\packages\GleamTech.Common.5.4.7\lib\net461\GleamTech.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GleamTech.DocumentUltimate, Version=6.4.5.0, Culture=neutral, PublicKeyToken=a05198837413a6d8, processorArchitecture=MSIL">
+      <HintPath>..\packages\GleamTech.DocumentUltimate.6.4.6\lib\net461\GleamTech.DocumentUltimate.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -1060,6 +1066,7 @@
     <Content Include="Views\Procesos\ReporteUsuarios.aspx" />
     <Content Include="Views\Procesos\Subidos\4-delete.png" />
     <Content Include="Views\Procesos\ventanaVista.aspx" />
+    <Content Include="Views\Procesos\visordocumentos.aspx" />
     <Content Include="Views\Seguridad\AsignacionAplicacion.aspx" />
     <Content Include="Views\Seguridad\ModificarEstado.aspx" />
     <Content Include="Views\Seguridad\ModificarModulo.aspx" />
@@ -3108,6 +3115,13 @@
     </Compile>
     <Compile Include="Views\Procesos\ventanaVista.aspx.designer.cs">
       <DependentUpon>ventanaVista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Procesos\visordocumentos.aspx.cs">
+      <DependentUpon>visordocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Procesos\visordocumentos.aspx.designer.cs">
+      <DependentUpon>visordocumentos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Seguridad\AsignacionAplicacion.aspx.cs">
       <DependentUpon>AsignacionAplicacion.aspx</DependentUpon>
