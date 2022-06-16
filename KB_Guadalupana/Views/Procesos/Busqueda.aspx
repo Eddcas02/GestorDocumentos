@@ -315,7 +315,7 @@
                                   <asp:Button ID="Button2" 
                                       CssClass="btn1" class="cierre" 
                                       Width="30%" runat="server"  
-                                      Text="Cerrar" OnClick="Button2_Click" />    <iframe style=" width: 100%; height: 100%;" id="irm1" src="~/Views/Procesos/VentanaVista.aspx#toolbar=0 "  runat="server" ></iframe>
+                                      Text="Cerrar" OnClick="Button2_Click" />    <iframe style=" width: 100%; height: 100%;" id="irm1" src="~/Views/Procesos/visordocumentos.aspx"  runat="server" ></iframe>
                              <br/>
                            
                             </asp:Panel>

@@ -1,0 +1,27 @@
+{
+  "CacheSourceKey": "omvbng",
+  "CachePdfKey": "omvbng/omvbng-npq31v.pdf",
+  "CacheXpzKey": "omvbng/omvbng-fevo24.xpz",
+  "CacheInfoKey": "omvbng/omvbng-fevo24.json",
+  "CacheCopyKey": null,
+  "Document": "Type=FileSystem;File=\"1-Solicitud de cancelación de pago.pdf\";Location=\"Type=Physical;Path=C:\\Users\\ecasasola\\Documents\\GitHub\\GestorDocumentos\\KB_Guadalupana\\Views\\Procesos\\Subidos\"",
+  "DocumentFileName": "1-Solicitud de cancelación de pago.pdf",
+  "DownloadFileName": null,
+  "InputOptions": {
+    "Format": "Pdf",
+    "Password": null
+  },
+  "PdfOutputOptions": {
+    "Watermarks": [],
+    "FastWebViewEnabled": false,
+    "Password": null,
+    "Attachments": [],
+    "Format": "Pdf"
+  },
+  "XpzOutputOptions": {
+    "Password": "omvbng",
+    "HighQualityEnabled": false,
+    "Format": "Xpz"
+  },
+  "Attachments": []
+}
