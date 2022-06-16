@@ -1,0 +1,31 @@
+{
+  "CacheSourceKey": "11qbhe8",
+  "CachePdfKey": "11qbhe8/11qbhe8-jrdoxr.pdf",
+  "CacheXpzKey": "11qbhe8/11qbhe8-1x1y3s7.xpz",
+  "CacheInfoKey": "11qbhe8/11qbhe8-1x1y3s7.json",
+  "CacheCopyKey": null,
+  "Document": "Type=FileSystem;File=\"documento de prueba.docx\";Location=\"Type=Physical;Path=C:\\Users\\ecasasola\\Desktop\\git\\GestorDocumentos\\KB_Guadalupana\\Views\\Procesos\\Subidos\"",
+  "DocumentFileName": "documento de prueba.docx",
+  "DownloadFileName": null,
+  "InputOptions": {
+    "$type": "GleamTech.DocumentUltimate.WordProcessingInputOptions, GleamTech.DocumentUltimate",
+    "FieldFileName": "documento de prueba.docx",
+    "UpdateFields": true,
+    "Encoding": null,
+    "Format": "Docx",
+    "Password": null
+  },
+  "PdfOutputOptions": {
+    "Watermarks": [],
+    "FastWebViewEnabled": false,
+    "Password": null,
+    "Attachments": [],
+    "Format": "Pdf"
+  },
+  "XpzOutputOptions": {
+    "Password": "11qbhe8",
+    "HighQualityEnabled": false,
+    "Format": "Xpz"
+  },
+  "Attachments": []
+}
