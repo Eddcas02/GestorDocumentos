@@ -18,10 +18,6 @@ namespace KB_Guadalupana
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            //Set this property only if you have a valid license key, otherwise do not
-            //set it so DocumentUltimate runs in trial mode.
-            //DocumentUltimateConfiguration.Current.LicenseKey = "QQJDJLJP34...";
         }
     }
 }

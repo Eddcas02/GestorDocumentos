@@ -9194,9 +9194,3 @@ C:\Users\ecasasola\Documents\GitHub\GestorDocumentos\KB_Guadalupana\obj\Debug\KB
 C:\Users\ecasasola\Documents\GitHub\GestorDocumentos\KB_Guadalupana\obj\Debug\KB_Guadalupana.csproj.CopyComplete
 C:\Users\ecasasola\Documents\GitHub\GestorDocumentos\KB_Guadalupana\obj\Debug\KB_Guadalupana.dll
 C:\Users\ecasasola\Documents\GitHub\GestorDocumentos\KB_Guadalupana\obj\Debug\KB_Guadalupana.pdb
-C:\Users\ecasasola\Documents\GitHub\GestorDocumentos\KB_Guadalupana\bin\GleamTech.Common.dll
-C:\Users\ecasasola\Documents\GitHub\GestorDocumentos\KB_Guadalupana\bin\GleamTech.DocumentUltimate.dll
-C:\Users\ecasasola\Documents\GitHub\GestorDocumentos\KB_Guadalupana\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\ecasasola\Documents\GitHub\GestorDocumentos\KB_Guadalupana\bin\GleamTech.Common.xml
-C:\Users\ecasasola\Documents\GitHub\GestorDocumentos\KB_Guadalupana\bin\GleamTech.DocumentUltimate.xml
-C:\Users\ecasasola\Documents\GitHub\GestorDocumentos\KB_Guadalupana\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml

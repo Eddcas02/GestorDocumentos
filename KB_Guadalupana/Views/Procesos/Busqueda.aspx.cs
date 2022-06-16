@@ -206,7 +206,6 @@ namespace KB_Guadalupana.Views.Procesos
                 string tipo = extension[tamaño - 1];
 
                 string FilePath = Server.MapPath(documentoselec);
-             
                 WebClient User = new WebClient();
                 Byte[] FileBuffer = User.DownloadData(FilePath);
                 if (FileBuffer != null)
@@ -434,11 +433,6 @@ namespace KB_Guadalupana.Views.Procesos
 
                 string dato = Convert.ToString((row.FindControl("lblid") as Label).Text);
                 Session["iddocumentoselec"] = dato;
-                string documentoselec = sn.obtenerrutadocumento(dato);
-
-                string FilePath = Server.MapPath(documentoselec);
-                Session["path"] = FilePath;
-
 
                 mp1.Show();
             }
