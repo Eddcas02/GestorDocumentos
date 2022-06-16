@@ -17,7 +17,7 @@
         }
 
         form{
-            height: 105%;
+            height: 100%;
         }
 
         body{
@@ -26,7 +26,7 @@
         }
 
         .menuCategorias{
-            height:87.5%;
+            height:85.5%;
              font-family:'Montserrat';
              
         }
@@ -135,7 +135,7 @@ justify-content:flex-start;
     }
 
     nav{
-        height:11.11%;
+        height:10.00%;
     }
 
     .dicat {
@@ -144,7 +144,7 @@ justify-content:flex-start;
 
     .menuCategorias{
         border-left:30px #313C4F solid;
-         
+        height:100%;
             background-repeat:  no-repeat;
   background-size: 30%;
     }
