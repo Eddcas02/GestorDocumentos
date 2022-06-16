@@ -527,9 +527,14 @@ namespace KB_Guadalupana.Views.Procesos
                 {
                     if (tipo.ToLower() == "pdf")
                     {
-                        Session["iddocumentoselec"] = id;
+                        string attachment = "attachment; filename=" + extension[0] + ".pdf";
+                        Response.ClearContent();
+                        Response.AddHeader("content-disposition", attachment);
+                        Response.ContentType = "application/pdf";
 
-                        mp1.Show();
+                        Response.WriteFile(FilePath);
+
+                        Response.End();
 
                     }
                     else if (tipo.ToLower() == "tif" || tipo.ToLower() == "tiff")
@@ -540,9 +545,18 @@ namespace KB_Guadalupana.Views.Procesos
                     }
                     else if (tipo.ToLower() == "docx")
                     {
-                        Response.ContentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-                        Response.AddHeader("content-length", FileBuffer.Length.ToString());
-                        Response.BinaryWrite(FileBuffer);
+
+                        string attachment = "attachment; filename=" + extension[0] + ".docx";
+                        Response.ClearContent();
+                        Response.AddHeader("content-disposition", attachment);
+                        Response.ContentType = "application/ms-word";
+
+                        Response.WriteFile(FilePath);
+
+                        Response.End();
+                        //Response.ContentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+                        //Response.AddHeader("content-length", FileBuffer.Length.ToString());
+                        //Response.BinaryWrite(FileBuffer);
                     }
                     else if (tipo.ToLower() == "xlsx" || tipo.ToLower() == "xls")
                     {
