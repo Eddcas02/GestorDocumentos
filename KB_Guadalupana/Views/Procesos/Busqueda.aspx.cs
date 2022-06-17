@@ -9,7 +9,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net;
 using System.Drawing;
-using Image = System.Web.UI.WebControls.Image;
 
 namespace KB_Guadalupana.Views.Procesos
 {
@@ -207,6 +206,7 @@ namespace KB_Guadalupana.Views.Procesos
                 string tipo = extension[tamaño - 1];
 
                 string FilePath = Server.MapPath(documentoselec);
+             
                 WebClient User = new WebClient();
                 Byte[] FileBuffer = User.DownloadData(FilePath);
                 if (FileBuffer != null)
@@ -434,6 +434,11 @@ namespace KB_Guadalupana.Views.Procesos
 
                 string dato = Convert.ToString((row.FindControl("lblid") as Label).Text);
                 Session["iddocumentoselec"] = dato;
+                string documentoselec = sn.obtenerrutadocumento(dato);
+
+                string FilePath = Server.MapPath(documentoselec);
+                Session["path"] = FilePath;
+
 
                 mp1.Show();
             }
@@ -463,16 +468,9 @@ namespace KB_Guadalupana.Views.Procesos
                 try {
                     LinkButton lkb = (LinkButton)e.Row.FindControl("iddocdown");
                     LinkButton lkb2 = (LinkButton)e.Row.FindControl("iddoc");
-                    Image img1 = (Image)e.Row.FindControl("imgverCentro");
-                    Image img2 = (Image)e.Row.FindControl("imgver");
-                    Image img3 = (Image)e.Row.FindControl("imgdescarga");
-                    Image img4 = (Image)e.Row.FindControl("imgdesCentro");
+
                     lkb.Visible = false;
                     lkb2.Visible = false;
-                    img1.Visible = false;
-                    img2.Visible = false;
-                    img3.Visible = false;
-                    img4.Visible = false;
                     string iduser = sn.obteneridusuario(usuario);
                     permi = sn.permisosuser(iduser);
                     
@@ -480,23 +478,18 @@ namespace KB_Guadalupana.Views.Procesos
                      datos[i]= row["permiso"].ToString();
 
                         i++;
-                    
                     }
+                    
+
                     if (datos[0] == "1")
                     {
+
                         lkb.Visible = true;
-                        img4.Visible = true;
+                        
                     }
                     if (datos[1] == "2") {
                         lkb2.Visible = true;
-                        img1.Visible = true;
-                    }
-                    if (datos[1] == "2" && datos[0] == "1")
-                    {
-                        img1.Visible = false;
-                        img2.Visible = true;
-                        img3.Visible = true;
-                        img4.Visible = false;
+
                     }
                 }
                 catch (Exception es) {
@@ -516,16 +509,13 @@ namespace KB_Guadalupana.Views.Procesos
         {
             try
             {
-                LinkButton btn = (LinkButton)sender;
-                GridViewRow row = (GridViewRow)btn.NamingContainer;
-                int i = Convert.ToInt32(row.RowIndex);
-
-                string dato = Convert.ToString((row.FindControl("lblid") as Label).Text);
-                string documentoselec = sn.obtenerrutadocumento(dato);
+                string id = Convert.ToString((gridViewDocumentos.SelectedRow.FindControl("lblid") as Label).Text);
+                Session["iddocumentoselec"] = id;
+                string documentoselec = sn.obtenerrutadocumento(id);
 
 
 
-                string nombrearchivo = sn.nombrearchivo(dato);
+                string nombrearchivo = sn.nombrearchivo(id);
                 string[] extension = nombrearchivo.Split('.');
                 int tamaño = extension.Length;
                 string tipo = extension[tamaño - 1];
@@ -537,12 +527,6 @@ namespace KB_Guadalupana.Views.Procesos
                 {
                     if (tipo.ToLower() == "pdf")
                     {
-
-
-                        //Session["iddocumentoselec"] = id;
-
-                        //mp1.Show();
-
                         string attachment = "attachment; filename=" + extension[0] + ".pdf";
                         Response.ClearContent();
                         Response.AddHeader("content-disposition", attachment);
@@ -561,9 +545,18 @@ namespace KB_Guadalupana.Views.Procesos
                     }
                     else if (tipo.ToLower() == "docx")
                     {
-                        Response.ContentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-                        Response.AddHeader("content-length", FileBuffer.Length.ToString());
-                        Response.BinaryWrite(FileBuffer);
+
+                        string attachment = "attachment; filename=" + extension[0] + ".docx";
+                        Response.ClearContent();
+                        Response.AddHeader("content-disposition", attachment);
+                        Response.ContentType = "application/ms-word";
+
+                        Response.WriteFile(FilePath);
+
+                        Response.End();
+                        //Response.ContentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+                        //Response.AddHeader("content-length", FileBuffer.Length.ToString());
+                        //Response.BinaryWrite(FileBuffer);
                     }
                     else if (tipo.ToLower() == "xlsx" || tipo.ToLower() == "xls")
                     {
@@ -596,9 +589,9 @@ namespace KB_Guadalupana.Views.Procesos
                     }
                 }
             }
-            catch(Exception es)
+            catch
             {
-                Console.WriteLine(es.Message);
+
             }
         }
     }
