@@ -959,9 +959,10 @@
     <Content Include="Views\Imagenes\barra.png" />
     <Content Include="Views\Imagenes\F1.png" />
     <Content Include="Views\Imagenes\F2.png" />
+    <Content Include="Views\Imagenes\filePdf.png" />
     <Content Include="Views\Imagenes\Fondo.png" />
-    <Content Include="Views\Imagenes\Logo.png" />
-    <Content Include="Views\Imagenes\Logotipo-Guadalupana1.png" />
+    <Content Include="Views\Imagenes\lupa.png" />
+    <Content Include="Views\Imagenes\verDoc.png" />
     <Content Include="Views\MantenimientosControl\controlAgenda.aspx" />
     <Content Include="Views\MantenimientosControl\controlArqueos.aspx" />
     <Content Include="Views\MantenimientosControl\controlCRM.aspx" />

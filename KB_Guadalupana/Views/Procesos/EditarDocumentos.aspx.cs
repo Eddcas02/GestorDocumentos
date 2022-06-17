@@ -231,7 +231,7 @@ namespace KB_Guadalupana.Views.Procesos
 
         public void llenardatos()
         {
-            string id =  Convert.ToString(Session["id_documento"]= "2")   ;
+            string id =  Convert.ToString(Session["id_documento"])   ;
             string[] datosdocumento = sn.obtenerdatosdocumento(id);
             string[] fecha;
             string[] fecha2;
