@@ -275,14 +275,18 @@
                                        <asp:Label ID="lblorigen" Text='<%# Eval("Origen") %>' runat="server" />
                                     </ItemTemplate>
                                 </asp:TemplateField>
-                                     <asp:TemplateField ControlStyle-CssClass="diseño"  HeaderText="Origen">
+                                <asp:TemplateField ControlStyle-CssClass="diseño"  HeaderText="Opciones">
                                     <ItemTemplate>
-                                        <asp:LinkButton ID="iddoc" Text="Ver Documento" runat="server" OnClick="iddoc_Click" />
-                                    <asp:LinkButton ID="iddocdown" Text="Descargar" runat="server" OnClick="iddocdown_Click" />
-                                        
-                                    </ItemTemplate>
+                                        <asp:LinkButton ID="iddoc"  runat="server" OnClick="iddoc_Click" >
+                                            <asp:Image ID="imgverCentro" runat="server" ImageUrl="../Imagenes/verDoc.png"  AlternateText="Ver Documento" ToolTip="Ver Documeto" style="display:block; margin:auto"/>
+                                            <asp:Image ID="imgver" runat="server" ImageUrl="../Imagenes/verDoc.png"  AlternateText="Ver Documento" ToolTip="Ver Documeto" />
+                                        </asp:LinkButton>
+                                   <asp:LinkButton ID="iddocdown"  runat="server" OnClick="iddocdown_Click"   >
+                                       <asp:Image ID="imgdescarga" runat="server" ImageUrl="../Imagenes/filePdf.png" AlternateText="Descargar" ToolTip="Descargar"/>
+                                       <asp:Image ID="imgdesCentro" runat="server" ImageUrl="../Imagenes/filePdf.png" AlternateText="Descargar" ToolTip="Descargar" style="display:block; margin:auto"/>
+                                     </asp:LinkButton>
+                                       </ItemTemplate>
                                 </asp:TemplateField>  
-                                        
                              
                           <%--      
                                 <asp:ButtonField   Text="Ver Documento" ItemStyle-CssClass="fas fa-search" CommandName="Select" ItemStyle-Width="90px" ControlStyle-ForeColor="Black">
@@ -315,7 +319,7 @@
                                   <asp:Button ID="Button2" 
                                       CssClass="btn1" class="cierre" 
                                       Width="30%" runat="server"  
-                                      Text="Cerrar" OnClick="Button2_Click" />    <iframe style=" width: 100%; height: 100%;" id="irm1" src="~/Views/Procesos/visordocumentos.aspx"  runat="server" ></iframe>
+                                      Text="Cerrar" OnClick="Button2_Click" />    <iframe style=" width: 100%; height: 100%;" id="irm1" src="~/Views/Procesos/visordocumentos.aspx "  runat="server" ></iframe>
                              <br/>
                            
                             </asp:Panel>

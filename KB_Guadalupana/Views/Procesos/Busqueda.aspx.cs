@@ -9,6 +9,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net;
 using System.Drawing;
+using Image = System.Web.UI.WebControls.Image;
 
 namespace KB_Guadalupana.Views.Procesos
 {
@@ -466,11 +467,18 @@ namespace KB_Guadalupana.Views.Procesos
             if (e.Row.RowType == DataControlRowType.DataRow)
             {
                 try {
-                    LinkButton lkb = (LinkButton)e.Row.FindControl("iddocdown");
+                     LinkButton lkb = (LinkButton)e.Row.FindControl("iddocdown");
                     LinkButton lkb2 = (LinkButton)e.Row.FindControl("iddoc");
-
+                    Image img1 = (Image)e.Row.FindControl("imgverCentro");
+                    Image img2 = (Image)e.Row.FindControl("imgver");
+                    Image img3 = (Image)e.Row.FindControl("imgdescarga");
+                    Image img4 = (Image)e.Row.FindControl("imgdesCentro");
                     lkb.Visible = false;
                     lkb2.Visible = false;
+                    img1.Visible = false;
+                    img2.Visible = false;
+                    img3.Visible = false;
+                    img4.Visible = false;
                     string iduser = sn.obteneridusuario(usuario);
                     permi = sn.permisosuser(iduser);
                     
@@ -485,11 +493,18 @@ namespace KB_Guadalupana.Views.Procesos
                     {
 
                         lkb.Visible = true;
-                        
+                        img4.Visible = true;
                     }
                     if (datos[1] == "2") {
                         lkb2.Visible = true;
-
+                             img1.Visible = true;
+                    }
+                    if (datos[1] == "2" && datos[0] == "1")
+                    {
+                        img1.Visible = false;
+                        img2.Visible = true;
+                        img3.Visible = true;
+                        img4.Visible = false;
                     }
                 }
                 catch (Exception es) {
@@ -509,13 +524,16 @@ namespace KB_Guadalupana.Views.Procesos
         {
             try
             {
-                string id = Convert.ToString((gridViewDocumentos.SelectedRow.FindControl("lblid") as Label).Text);
-                Session["iddocumentoselec"] = id;
-                string documentoselec = sn.obtenerrutadocumento(id);
+                LinkButton btn = (LinkButton)sender;
+                GridViewRow row = (GridViewRow)btn.NamingContainer;
+                int i = Convert.ToInt32(row.RowIndex);
+
+                string dato = Convert.ToString((row.FindControl("lblid") as Label).Text);
+                string documentoselec = sn.obtenerrutadocumento(dato);
 
 
 
-                string nombrearchivo = sn.nombrearchivo(id);
+                string nombrearchivo = sn.nombrearchivo(dato);
                 string[] extension = nombrearchivo.Split('.');
                 int tamaño = extension.Length;
                 string tipo = extension[tamaño - 1];
