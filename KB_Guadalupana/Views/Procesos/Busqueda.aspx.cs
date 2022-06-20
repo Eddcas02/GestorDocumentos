@@ -460,52 +460,240 @@ namespace KB_Guadalupana.Views.Procesos
 
         protected void gridViewDocumentos_RowDataBound(object sender, GridViewRowEventArgs e)
         {
-            
+         
+
             DataTable permi = new DataTable();
             string[] datos = new string[100];
             int i = 0;
+            int j = 0;
             if (e.Row.RowType == DataControlRowType.DataRow)
             {
                 try {
                      LinkButton lkb = (LinkButton)e.Row.FindControl("iddocdown");
                     LinkButton lkb2 = (LinkButton)e.Row.FindControl("iddoc");
-                    Image img1 = (Image)e.Row.FindControl("imgverCentro");
-                    Image img2 = (Image)e.Row.FindControl("imgver");
-                    Image img3 = (Image)e.Row.FindControl("imgdescarga");
-                    Image img4 = (Image)e.Row.FindControl("imgdesCentro");
+              
+                    Image imagenver = (Image)e.Row.FindControl("imgver");
+                    Image imgdescargar = (Image)e.Row.FindControl("imgdescarga");
+                
+                    Image img5 = (Image)e.Row.FindControl("imagenword"); 
+                    Image img6 = (Image)e.Row.FindControl("imagenexcel");
+
+                    
+
                     lkb.Visible = false;
                     lkb2.Visible = false;
-                    img1.Visible = false;
-                    img2.Visible = false;
-                    img3.Visible = false;
-                    img4.Visible = false;
+                    imagenver.Visible = false;
+
+                    imgdescargar.Visible = false;
+                  
                     string iduser = sn.obteneridusuario(usuario);
                     permi = sn.permisosuser(iduser);
+
                     
+                    string _iddocc = DataBinder.Eval(e.Row.DataItem, "id").ToString();
+
+                    string nombrearchivo = sn.nombrearchivo(_iddocc);
+                    string[] extension = nombrearchivo.Split('.');
+                    int tamaño = extension.Length;
+                    string tipo = extension[tamaño - 1];
+
                     foreach (DataRow row in permi.Rows) {
                      datos[i]= row["permiso"].ToString();
 
+                      
                         i++;
                     }
+
+                
+                
+
+
+
+                        if (tipo == "pdf")
+                        {
+
+                        //centramos el descargar
+                        if (datos[0] == "1" && i == 1)
+                        {
+
+                            lkb.Visible = true;
+                            imgdescargar.Visible = true;
+                            imgdescargar.Attributes.Add("style", "display:block; margin:auto");
+                            imgdescargar.ImageUrl = "../Imagenes/filePdf.png";
+                        }
+                        //dos permisos
+                        if (datos[0] == "1" && datos[1] == "2" && i == 2)
+                        {
+                            lkb.Visible = true;
+                            lkb2.Visible = true;
+
+                            imagenver.Visible = true;
+                            imgdescargar.Visible = true;
+                            imgdescargar.ImageUrl = "../Imagenes/filePdf.png";
+
+                        }
+                        //centramos ver
+                        if (datos[0] == "2" && i == 1)
+                        {
+                            lkb2.Visible = true;
+                            imagenver.Visible = true;
+                            imagenver.Attributes.Add("style", "display:block; margin:auto");
+                          
+                        }
+                    }
+                        if (tipo == "docx")
+                        {
+
+                        //centramos el descargar
+                        if (datos[0] == "1" && i == 1)
+                        {
+
+                            lkb.Visible = true;
+                            imgdescargar.Visible = true;
+                            imgdescargar.Attributes.Add("style", "display:block; margin:auto");
+                            imgdescargar.ImageUrl = "../Imagenes/fileWord.png";
+                        }
+                        //dos permisos
+                        if (datos[0] == "1" && datos[1] == "2" && i == 2)
+                        {
+                            lkb.Visible = true;
+                            lkb2.Visible = true;
+
+                            imagenver.Visible = true;
+                            imgdescargar.Visible = true;
+                            imgdescargar.ImageUrl = "../Imagenes/fileWord.png";
+
+                        }
+                        //centramos ver
+                        if (datos[0] == "2" && i == 1)
+                        {
+                            lkb2.Visible = true;
+                            imagenver.Visible = true;
+                            imagenver.Attributes.Add("style", "display:block; margin:auto");
+
+                        }
+
+                    }
+                        if (tipo == "xlsx")
+                        {
+
+
+                        //centramos el descargar
+                        if (datos[0] == "1" && i == 1)
+                        {
+
+                            lkb.Visible = true;
+                            imgdescargar.Visible = true;
+                            imgdescargar.Attributes.Add("style", "display:block; margin:auto");
+                            imgdescargar.ImageUrl = "../Imagenes/fileExcel.png";
+                        }
+                        //dos permisos
+                        if (datos[0] == "1" && datos[1] == "2" && i == 2)
+                        {
+                            lkb.Visible = true;
+                            lkb2.Visible = true;
+
+                            imagenver.Visible = true;
+                            imgdescargar.Visible = true;
+                            imgdescargar.ImageUrl = "../Imagenes/fileExcel.png";
+
+                        }
+                        //centramos ver
+                        if (datos[0] == "2" && i == 1)
+                        {
+                            lkb2.Visible = true;
+                            imagenver.Visible = true;
+                            imagenver.Attributes.Add("style", "display:block; margin:auto");
+
+                        }
+                    }
+                        if (tipo == "xls")
+                        {
+
+                        //centramos el descargar
+                        if (datos[0] == "1" && i == 1)
+                        {
+
+                            lkb.Visible = true;
+                            imgdescargar.Visible = true;
+                            imgdescargar.Attributes.Add("style", "display:block; margin:auto");
+                            imgdescargar.ImageUrl = "../Imagenes/fileExcel.png";
+                        }
+                        //dos permisos
+                        if (datos[0] == "1" && datos[1] == "2" && i == 2)
+                        {
+                            lkb.Visible = true;
+                            lkb2.Visible = true;
+
+                            imagenver.Visible = true;
+                            imgdescargar.Visible = true;
+                            imgdescargar.ImageUrl = "../Imagenes/fileExcel.png";
+
+                        }
+                        //centramos ver
+                        if (datos[0] == "2" && i == 1)
+                        {
+                            lkb2.Visible = true;
+                            imagenver.Visible = true;
+                            imagenver.Attributes.Add("style", "display:block; margin:auto");
+
+                        }
+                    }
+                        if (tipo == "csv")
+                        {
+
+                        //centramos el descargar
+                        if (datos[0] == "1" && i == 1)
+                        {
+
+                            lkb.Visible = true;
+                            imgdescargar.Visible = true;
+                            imgdescargar.Attributes.Add("style", "display:block; margin:auto");
+                            imgdescargar.ImageUrl = "../Imagenes/filePdf.png";
+                        }
+                        //dos permisos
+                        if (datos[0] == "1" && datos[1] == "2" && i == 2)
+                        {
+                            lkb.Visible = true;
+                            lkb2.Visible = true;
+
+                            imagenver.Visible = true;
+                            imgdescargar.Visible = true;
+                            imgdescargar.ImageUrl = "../Imagenes/filePdf.png";
+
+                        }
+                        //centramos ver
+                        if (datos[0] == "2" && i == 1)
+                        {
+                            lkb2.Visible = true;
+                            imagenver.Visible = true;
+                            imagenver.Attributes.Add("style", "display:block; margin:auto");
+
+                        }
+                    }
+
+
                     
 
-                    if (datos[0] == "1")
-                    {
 
-                        lkb.Visible = true;
-                        img4.Visible = true;
-                    }
-                    if (datos[1] == "2") {
-                        lkb2.Visible = true;
-                             img1.Visible = true;
-                    }
-                    if (datos[1] == "2" && datos[0] == "1")
-                    {
-                        img1.Visible = false;
-                        img2.Visible = true;
-                        img3.Visible = true;
-                        img4.Visible = false;
-                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 }
                 catch (Exception es) {
                     Console.WriteLine(es.Message);

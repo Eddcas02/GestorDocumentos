@@ -278,12 +278,11 @@
                                 <asp:TemplateField ControlStyle-CssClass="diseño"  HeaderText="Opciones">
                                     <ItemTemplate>
                                         <asp:LinkButton ID="iddoc"  runat="server" OnClick="iddoc_Click" >
-                                            <asp:Image ID="imgverCentro" runat="server" ImageUrl="../Imagenes/verDoc.png"  AlternateText="Ver Documento" ToolTip="Ver Documeto" style="display:block; margin:auto"/>
+                                           
                                             <asp:Image ID="imgver" runat="server" ImageUrl="../Imagenes/verDoc.png"  AlternateText="Ver Documento" ToolTip="Ver Documeto" />
                                         </asp:LinkButton>
                                    <asp:LinkButton ID="iddocdown"  runat="server" OnClick="iddocdown_Click"   >
-                                       <asp:Image ID="imgdescarga" runat="server" ImageUrl="../Imagenes/filePdf.png" AlternateText="Descargar" ToolTip="Descargar"/>
-                                       <asp:Image ID="imgdesCentro" runat="server" ImageUrl="../Imagenes/filePdf.png" AlternateText="Descargar" ToolTip="Descargar" style="display:block; margin:auto"/>
+                                       <asp:Image ID="imgdescarga" runat="server"  AlternateText="Descargar" ToolTip="Descargar"/>
                                      </asp:LinkButton>
                                        </ItemTemplate>
                                 </asp:TemplateField>  
