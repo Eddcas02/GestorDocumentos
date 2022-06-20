@@ -194,20 +194,21 @@
                         <label class="titulos" style="margin-left:46%"><b>Tipo de documento</b></label>
                     </div>
                      <div class="formato">
-                        <input id="Codigo" runat="server" type="text" class="formatoinput" placeholder="Ingrese código" maxlength="50" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+
+                        <asp:TextBox ID="Codigo" runat="server" type="text" class="formatoinput" placeholder="Ingrese código" maxlength="50" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
                          <asp:DropDownList id="TipoDocumento" runat="server" class="formatoinput" AutoPostBack="false"></asp:DropDownList>
                     </div><br />
                     <div class="formato3">
                         <label class="titulos"><b>Nombre del documento</b></label>
-                        <input id="NombreDocumento" runat="server" type="text" class="formatoinput2" placeholder="Ingrese nombre del documento" maxlength="500" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+                        <asp:TextBox  ID="NombreDocumento" runat="server" type="text" class="formatoinput2" placeholder="Ingrese nombre del documento" maxlength="500" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
                     </div><br />
                     <div class="formatoTitulo" style="margin-bottom:5px">
                         <label class="titulos"><b>Versión</b></label>
                         <label class="titulos" style="margin-left:46%"><b>Fecha de aprobación</b></label>
                     </div>
                     <div class="formato">
-                        <input id="Version" runat="server" type="text" class="formatoinput" placeholder="Ingrese versión" maxlength="50" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
-                         <input id="FechaAprobacion" runat="server" type="date" class="formatoinput"/>
+                        <asp:TextBox  ID="Version" runat="server" type="text" class="formatoinput" placeholder="Ingrese versión" maxlength="50" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+                         <asp:TextBox  ID="FechaAprobacion" runat="server" type="date" class="formatoinput"/>
                     </div><br />
                      <div class="formatoTitulo" style="margin-bottom:5px">
                         <label class="titulos"><b>Estado</b></label>

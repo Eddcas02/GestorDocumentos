@@ -959,7 +959,9 @@
     <Content Include="Views\Imagenes\barra.png" />
     <Content Include="Views\Imagenes\F1.png" />
     <Content Include="Views\Imagenes\F2.png" />
+    <Content Include="Views\Imagenes\fileExcel.png" />
     <Content Include="Views\Imagenes\filePdf.png" />
+    <Content Include="Views\Imagenes\fileWord.png" />
     <Content Include="Views\Imagenes\Fondo.png" />
     <Content Include="Views\Imagenes\lupa.png" />
     <Content Include="Views\Imagenes\verDoc.png" />
