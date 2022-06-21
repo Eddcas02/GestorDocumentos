@@ -1068,6 +1068,7 @@
     <Content Include="Views\Procesos\Reportes\ReporteDocumentos.aspx" />
     <Content Include="Views\Procesos\ReporteUsuarios.aspx" />
     <Content Include="Views\Procesos\Subidos\4-delete.png" />
+    <Content Include="Views\Procesos\Ventanas\UsuariosMant.aspx" />
     <Content Include="Views\Procesos\ventanaVista.aspx" />
     <Content Include="Views\Procesos\visordocumentos.aspx" />
     <Content Include="Views\Seguridad\AsignacionAplicacion.aspx" />
@@ -1210,6 +1211,7 @@
     <Compile Include="Controllers\Conexion_seguridad.cs" />
     <Compile Include="Controllers\CRM_Conexion.cs" />
     <Compile Include="Controllers\CRM_Sentencias.cs" />
+    <Compile Include="Controllers\encrip.cs" />
     <Compile Include="Controllers\evaluacionesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KB_Rutas.cs" />
@@ -3028,6 +3030,7 @@
     <Compile Include="Views\Procesos\EditarDocumentos.aspx.designer.cs">
       <DependentUpon>EditarDocumentos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Procesos\encrip.cs" />
     <Compile Include="Views\Procesos\MantenimientoAreas.aspx.cs">
       <DependentUpon>MantenimientoAreas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3111,6 +3114,13 @@
     </Compile>
     <Compile Include="Views\Procesos\ReporteUsuarios.aspx.designer.cs">
       <DependentUpon>ReporteUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Procesos\Ventanas\UsuariosMant.aspx.cs">
+      <DependentUpon>UsuariosMant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Procesos\Ventanas\UsuariosMant.aspx.designer.cs">
+      <DependentUpon>UsuariosMant.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Procesos\ventanaVista.aspx.cs">
       <DependentUpon>ventanaVista.aspx</DependentUpon>
@@ -3750,7 +3760,6 @@
     <Folder Include="Views\ProcesosJudiciales\Subidos\Resolucion\" />
     <Folder Include="Views\ProcesosJudiciales\Subidos\Transaccion\" />
     <Folder Include="Views\ProcesosJudiciales\Subidos\Voucher\" />
-    <Folder Include="Views\Procesos\Ventanas\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

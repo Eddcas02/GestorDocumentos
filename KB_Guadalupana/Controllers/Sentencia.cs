@@ -20,7 +20,76 @@ namespace KB_Guadalupana.Controllers
             finally { cn.desconectar(); }
 
         }
+        public string usuariosi(string coduser)
+        {
+            String camporesultante = "";
+            using (MySqlConnection sqlCon = new MySqlConnection(conexiongeneral.cadenadeconexiongeneral()))
+            {
+                try
+                {
+                    sqlCon.Open();
+                    string sql = "SELECT codgenusuario FROM gen_usuario where gen_usuarionombre = '" + coduser + "' ;";
+                    MySqlCommand command = new MySqlCommand(sql, sqlCon);
+                    MySqlDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    camporesultante = reader.GetValue(0).ToString();
 
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine(camporesultante);
+                }
+                return camporesultante;
+            }
+
+        }
+        public string pass(string nomuser)
+        {
+            String camporesultante = "";
+            using (MySqlConnection sqlCon = new MySqlConnection(conexiongeneral.cadenadeconexiongeneral()))
+            {
+                try
+                {
+                    sqlCon.Open();
+                    string sql = "SELECT gen_pass FROM gen_usuario where codgenusuario = '" + nomuser + "' ;";
+                    MySqlCommand command = new MySqlCommand(sql, sqlCon);
+                    MySqlDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    camporesultante = reader.GetValue(0).ToString();
+
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine(camporesultante);
+                }
+                return camporesultante;
+            }
+
+        }
+
+        public string nombreuser(string nomuser)
+        {
+            String camporesultante = "";
+            using (MySqlConnection sqlCon = new MySqlConnection(conexiongeneral.cadenadeconexiongeneral()))
+            {
+                try
+                {
+                    sqlCon.Open();
+                    string sql = "SELECT gen_nombrecomp FROM gen_usuario where gen_usuarionombre = '" + nomuser + "' ;";
+                    MySqlCommand command = new MySqlCommand(sql, sqlCon);
+                    MySqlDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    camporesultante = reader.GetValue(0).ToString();
+
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine(camporesultante);
+                }
+                return camporesultante;
+            }
+
+        }
         public MySqlDataReader consultar(string tabla)
         {
             try
