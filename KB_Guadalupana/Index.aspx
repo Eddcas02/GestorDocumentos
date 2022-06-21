@@ -56,14 +56,17 @@ body, html
         <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png" />
     </span>-->
     <div class="left">
- <input   id="IdUser" runat="server"  placeholder="Usuario"/>
-               <input   type="password" id="PSUser" runat="server" placeholder="Contraseña" onchange="iniciar_sesion2()" />
+ <asp:TextBox   id="IdUser" runat="server"  placeholder="Usuario"/>
+     
+               <asp:TextBox   type="password" id="PSUser" runat="server" placeholder="Contraseña" onchange="iniciar_sesion2()" />
+        
                 <a runat="server"  onclick="iniciar_sesion()" style="cursor:pointer;">Iniciar Sesión</a>
 </div>
    <div class="after"></div>
     <div class="right">
          <img src="Imagenes/logo-sion.png" />
     </div>
+     
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>

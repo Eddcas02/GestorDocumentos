@@ -106,6 +106,32 @@ namespace KB_Guadalupana.Controllers
                 return camporesultante;// devuelve un arrgeglo con los campos 
             }
         }
+        public string obtenerultimo(string tabla, string campo)
+        {
+            String camporesultante = "";
+            using (MySqlConnection sqlCon = new MySqlConnection(conexiongeneral.cadenadeconexiongeneral()))
+            {
+                try
+                {
+                    sqlCon.Open();
+                    string sql = "SELECT MAX(" + campo + " + 1) FROM " + tabla + ";"; //SELECT MAX(idFuncion) FROM `funciones`     
+                    MySqlCommand command = new MySqlCommand(sql, sqlCon);
+                    MySqlDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    camporesultante = reader.GetValue(0).ToString();
+                    //Console.WriteLine("El resultado es: " + camporesultante);
+                    if (String.IsNullOrEmpty(camporesultante))
+                        camporesultante = "1";
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine(camporesultante);
+                }
+                return camporesultante;
+            }
+
+
+        }
 
         public DataSet subcategorias1(string categoria)
         {
@@ -683,6 +709,27 @@ namespace KB_Guadalupana.Controllers
                 MySqlCommand myCommand = new MySqlCommand(query, sqlCon);
                 MySqlDataReader reader = myCommand.ExecuteReader();
             }
+        }
+
+        public void Insertar(string sql)
+        {
+
+            using (MySqlConnection sqlCon = new MySqlConnection(conexiongeneral.cadenadeconexiongeneral()))
+            {
+
+                try
+                {
+
+                    sqlCon.Open();
+                    MySqlCommand command = new MySqlCommand(sql, sqlCon);
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                }
+                catch (Exception ex) { Console.WriteLine(ex.Message.ToString() + " \nERROR EN CONSULTA\n -"); }
+
+            }
+
+
         }
 
         public DataTable reporteusuarios()

@@ -30,7 +30,7 @@ namespace Login_Web
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText IdUser;
+        protected global::System.Web.UI.WebControls.TextBox IdUser;
 
         /// <summary>
         /// PSUser control.
@@ -39,7 +39,7 @@ namespace Login_Web
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword PSUser;
+        protected global::System.Web.UI.WebControls.TextBox PSUser;
 
         /// <summary>
         /// iniciarsesion control.

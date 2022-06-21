@@ -42,7 +42,7 @@ namespace Login_Web
                     {
                         nombreuser.InnerText = Session["Nombre"].ToString();
                         abre = Session["sesion_usuario"].ToString();
-                        string resultado = abre.Substring(2, 2);
+                        string resultado = abre.Substring(0, 1);
                         string mayus = resultado.ToUpper();
                         abreuser.InnerText = mayus;
                         Button3.Visible = false;

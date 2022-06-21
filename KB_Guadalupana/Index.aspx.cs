@@ -10,6 +10,7 @@ using System.Data.SqlClient;
 using System.DirectoryServices;
 using System.DirectoryServices.ActiveDirectory;
 using System.DirectoryServices.AccountManagement;
+using KB_Guadalupana.Views.Procesos;
 
 
 namespace Login_Web
@@ -19,7 +20,8 @@ namespace Login_Web
             string nombre,usuario,correo;
         Sentencia sn = new Sentencia();
         Logica lg = new Logica();
-      
+        encrip en = new encrip();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -28,6 +30,7 @@ namespace Login_Web
    
         protected void iniciarsesion_Click(object sender, EventArgs e)
         {
+            string user, contra;
 
             //if (AuthenticateUser(IdUser.Value, PSUser.Value))
             //{
@@ -67,9 +70,64 @@ namespace Login_Web
             //    ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('No se puede autenticar con las credenciales proporcionadas');", true);
             //}
 
-            Session["sesion_usuario"] = "pgaortiz";
-            Session["Nombre"] = "Edgar Ruben Casasola Bacehz";
-            Response.Redirect("Views/Sesion/MenuBarra.aspx");
+            if (IdUser.Text != "") {
+
+                if (PSUser.Text != "")
+                {
+
+                    usuario = sn.usuariosi(IdUser.Text);
+
+                    if (usuario != "")
+                    {
+
+                        Session["sesion_usuario"] = IdUser.Text;
+
+                        contra = sn.pass(usuario);
+                        if (contra == en.Encrypt(PSUser.Text)) {
+
+                            Session["Nombre"] = sn.nombreuser(IdUser.Text); ;
+                            Response.Redirect("Views/Sesion/MenuBarra.aspx");
+                            PSUser.Text = "";
+                            IdUser.Text = "";
+                        }
+                        else
+                        {
+
+                            //usuario o contraseña equivocado
+                            PSUser.Text = "";
+                            IdUser.Text = "";
+                            String script = "alert('usuario o contraseña equivocados ');";
+                            ScriptManager.RegisterStartupScript(this, GetType().GetType(), "alertMessage", script, true);
+                        }
+                    }
+                    else {
+
+                        //usuario o contraseña equivocado
+
+                        String script = "alert('usuario o contraseña equivocados ');";
+                        ScriptManager.RegisterStartupScript(this, GetType().GetType(), "alertMessage", script, true);
+                    }
+                   
+
+                }
+                else {
+                    //escribir contrasenia
+                    //lblerror.Text = "Escriba la contraseña";
+                    //lblerror.Visible = true;
+                    String script = "alert('Escriba la contraseña ');";
+                    ScriptManager.RegisterStartupScript(this, GetType().GetType(), "alertMessage", script, true);
+
+                }
+            }
+            else
+            { //escribir usuario
+                String script = "alert('Escriba el usuario');";
+                ScriptManager.RegisterStartupScript(this, GetType().GetType(), "alertMessage", script, true);
+
+            }
+
+           
+           
         }
 
         private bool AuthenticateUser(string userName, string password)
