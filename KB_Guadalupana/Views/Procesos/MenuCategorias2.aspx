@@ -143,7 +143,7 @@ justify-content:flex-start;
     }
 
     .menuCategorias{
-        border-left:30px #313C4F solid;
+       /* border-left:30px #313C4F solid;*/
         height:100%;
             background-repeat:  no-repeat;
   background-size: 30%;
