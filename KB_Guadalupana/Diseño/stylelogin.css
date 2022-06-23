@@ -30,6 +30,7 @@ img{
 	padding-left: 8px;
 	@include box-sizing(border-box);
 }
+
 .before, .after {
 	position: absolute;
 	top: 0;
@@ -79,176 +80,597 @@ img{
 	height: 40%;
 	margin: auto;
 	border-radius: 5px;
-	background: white;
+	background: white ;
 	box-shadow: 1px 1px 50px #000;
 	display: none;
 	overflow: hidden;
 }
 
-.close-btn{
-  position: absolute;
-  cursor: pointer;
-  font-family: 'Open Sans Condensed', sans-serif;
-  line-height: 18px;
-  top: 3px;
-  right: 3px;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  border-radius: 10px;
-  opacity: .3;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.close-btn:hover{
-  opacity: .5;
-}
-
-/* Heading */
-h2 {
-	font-family: 'Serif';
-	position: relative;
-	margin-top: 0px;
-	text-align: center;
-	font-size: 30px;
-	color: #4D4E4E;
-}
-
-/* Inputs */
-a,
-input {
-	font-family: 'Serif';
-	text-decoration: none;
-	top: -2em;
-	position: relative;
-	width: 100%;
-	display: block;
-	margin: 9px auto;
-	font-size: 17px;
-	padding: 8px;
-	border-radius: 6px;
-	border: 1px solid #b1b7c1;
-	border-color: darkgrey;
-	-webkit-transition: all 2s ease-in-out;
-	-moz-transition: all 2s ease-in-out;
-	-o-transition: all 2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-
-	input:focus {
-		outline: none;
-		box-shadow: 3px 3px 10px #333;
-		
+	.close-btn {
+		position: absolute;
+		cursor: pointer;
+		font-family: 'Open Sans Condensed', sans-serif;
+		line-height: 18px;
+		top: 3px;
+		right: 3px;
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		border-radius: 10px;
+		opacity: .3;
+		-webkit-transition: all 2s ease-in-out;
+		-moz-transition: all 2s ease-in-out;
+		-o-transition: all 2s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 
-/* Placeholders */
-::-webkit-input-placeholder {
-	color: rgba(44,56,74,.95);
-}
-:-moz-placeholder { /* Firefox 18- */
-	color: red;
-}
-::-moz-placeholder {  /* Firefox 19+ */
-	color: red;
-}
-:-ms-input-placeholder {  
-   color: #333;  }
+		.close-btn:hover {
+			opacity: .5;
+		}
 
-/* Link */
-a {
-	font-family: 'Serif';
-	text-align: center;
-	padding: 4px 8px;
-	background: #3072AF;
-	color:aliceblue;
+	/* Heading */
+	h2 {
+		font-family: 'Serif';
+		position: relative;
+		margin-top: 0px;
+		text-align: center;
+		font-size: 30px;
+		color: #4D4E4E;
+	}
+
+	/* Inputs */
+	a,
+	input {
+		font-family: 'Serif';
+		text-decoration: none;
+		top: -2em;
+		position: relative;
+		width: 100%;
+		display: block;
+		margin: 9px auto;
+		font-size: 17px;
+		padding: 8px;
+		border-radius: 6px;
+		border: 1px solid #b1b7c1;
+		border-color: darkgrey;
+		-webkit-transition: all 2s ease-in-out;
+		-moz-transition: all 2s ease-in-out;
+		-o-transition: all 2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+		input:focus {
+			outline: none;
+			box-shadow: 3px 3px 10px #333;
+		}
+
+	/* Placeholders */
+	::-webkit-input-placeholder {
+		color: rgba(44,56,74,.95);
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: red;
+	}
+
+	::-moz-placeholder { /* Firefox 19+ */
+		color: red;
+	}
+
+	:-ms-input-placeholder {
+		color: #333;
+	}
+
+	/* Link */
+	a {
+		font-family: 'Serif';
+		text-align: center;
+		padding: 4px 8px;
+		background: #3072AF;
+		color: aliceblue;
+	}
+
+		a:hover {
+			opacity: 0.7;
+		}
+
+	#remember-container {
+		position: relative;
+		margin: -5px 20px;
+	}
+
+	.checkbox {
+		position: relative;
+		cursor: pointer;
+		-webkit-appearance: none;
+		padding: 5px;
+		border-radius: 4px;
+		background: rgba(3,3,3,.2);
+		display: inline-block;
+		width: 16px;
+		height: 15px;
+	}
+
+		.checkbox:checked:active {
+			box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+		}
+
+		.checkbox:checked {
+			background: rgba(3,3,3,.4);
+			box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.5);
+			color: #fff;
+		}
+
+			.checkbox:checked:after {
+				content: '\2714';
+				font-size: 10px;
+				position: absolute;
+				top: 0px;
+				left: 4px;
+				color: #fff;
+			}
+
+	#remember {
+		position: absolute;
+		font-size: 13px;
+		font-family: 'Hind', sans-serif;
+		color: rgba(255,255,255,.5);
+		top: 7px;
+		left: 20px;
+	}
+
+	#forgotten {
+		position: absolute;
+		font-size: 12px;
+		font-family: 'Hind', sans-serif;
+		color: rgba(255,255,255,.2);
+		right: 0px;
+		top: 8px;
+		cursor: pointer;
+		-webkit-transition: all 2s ease-in-out;
+		-moz-transition: all 2s ease-in-out;
+		-o-transition: all 2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+		#forgotten:hover {
+			color: rgba(255,255,255,.6);
+		}
+
+	#forgotten-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		width: 260px;
+		height: 180px;
+		border-radius: 10px;
+		background: rgba(3,3,3,0.25);
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+	}
+
+	.orange-btn {
+		background: rgba(87,198,255,.5);
+	}
+
+/*ADAPTACION DE LOGIN A DIFERENTES DISPOSITIVOS*/
+@media screen and (max-width:800px) {
+	#container {
+		position: absolute;
+		width: 60%;
+		height: 30%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
 }
 
-a:hover{
-  opacity: 0.7;
+@media screen and (max-width:800px) and (orientation: landscape) {
+	#container {
+		position: absolute;
+		width: 60%;
+		height: 60%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
 }
 
-#remember-container{
-  position: relative;
-  margin: -5px 20px;
+@media screen and (max-width:550px) {
+	#container {
+		position: absolute;
+		width: 60%;
+		height: 30%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+
+	.right {
+		width: 25%;
+		float: right;
+		padding-top: 20px;
+		padding-right: 20px;
+		/*padding-bottom: 5px;
+		padding-left: 6px;*/
+		@include box-sizing(border-box);
+	}
 }
 
-.checkbox {
-  position: relative;
-  cursor: pointer;
-	-webkit-appearance: none;
-	padding: 5px;
-	border-radius: 4px;
-  background: rgba(3,3,3,.2);
-	display: inline-block;
-  width: 16px;
-  height: 15px;
+/*IPHONE XR*/
+@media screen and (max-width:415px) and (orientation: portrait) {
+	#container {
+		position: absolute;
+		width: 70%;
+		height: 25%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+
+	.after {
+		content: '';
+		background: #D0D6DA;
+		height: 7em;
+		width: 0.12em;
+		top: 1em;
+		left: 3em;
+		right: -.6em;
+		z-index: 900;
+		@include box-shadow(0 9.6em 0 0 #D0D6DA);
+	}
+	.left {
+		width: 45%;
+		float: left;
+		padding: 1.7em 0.5em 2.5em; /*superior, */
+
+		@include box-sizing(border-box);
+	}
 }
 
-.checkbox:checked:active {
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+/*IPHONE SE*/
+@media screen and (max-width:376px) and (orientation: portrait) {
+	#container {
+		position: absolute;
+		width: 65%;
+		height: 30%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+
+	.after {
+		content: '';
+		background: #D0D6DA;
+		height: 7em;
+		width: 0.12em;
+		top: 1em;
+		left: 3.6em;
+		right: -.6em;
+		z-index: 900;
+		@include box-shadow(0 9.6em 0 0 #D0D6DA);
+	}
+
+	.left {
+		width: 50%;
+		float: left;
+		padding: 1em 0.5em 2.5em; /*superior, */
+
+		@include box-sizing(border-box);
+	}
 }
 
-.checkbox:checked {
-  background: rgba(3,3,3,.4);
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.5);
-	color: #fff;
+@media screen and (device-width: 852px) and (device-height: 686px) and (orientation: landscape) {
+	#container {
+		position: absolute;
+		width: 60%;
+		height: 36%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
 }
 
-.checkbox:checked:after {
-	content: '\2714';
-	font-size: 10px;
-	position: absolute;
-	top: 0px;
-	left: 4px;
-	color: #fff;
+/*IPHONE 12 PRO HORIZONTAL*/
+@media screen and (device-width: 844px) and (device-height: 390px) and (orientation: landscape) {
+	#container {
+		position: absolute;
+		width: 40%;
+		height: 50%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+	.left {
+		width: 40%;
+		float: left;
+		padding: 1em 0.5em 2.5em; /*superior, */
+		@include box-sizing(border-box);
+	}
+	.right {
+		width: 25%;
+		float: right;
+		padding-top: -1px;
+
+		@include box-sizing(border-box);
+	}
+	.after {
+		content: '';
+		background: #D0D6DA;
+		height: 7em;
+		width: 0.12em;
+		top: 1em;
+		left: 2.5em;
+		right: -.6em;
+		z-index: 900;
+		@include box-shadow(0 9.6em 0 0 #D0D6DA);
+	}
 }
 
-#remember{
-  position: absolute;
-  font-size: 13px;
-  font-family: 'Hind', sans-serif;
-  color: rgba(255,255,255,.5);
-  top: 7px;
-  left: 20px;
+/*IPHONE XR Y SAMSUNG S20 ULTRA*/
+@media screen and (min-width:895px) and (max-width:925px) and (orientation: landscape) {
+	#container {
+		position: absolute;
+		width: 55%;
+		height: 55%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
 }
 
-#forgotten{
-  position: absolute;
-  font-size: 12px;
-  font-family: 'Hind', sans-serif;
-  color: rgba(255,255,255,.2);
-  right: 0px;
-  top: 8px;
-  cursor: pointer;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+/*IPAD AIR Y IPDAR MINI HORIZONTAL*/
+@media screen and (min-width:1024px) and (max-width:1180px) and (orientation: landscape) {
+	#container {
+		position: absolute;
+		width: 47%;
+		height: 30%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
 }
 
-#forgotten:hover{
-  color: rgba(255,255,255,.6);
+/*IPAD AIR VERTICAL*/
+@media screen and (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
+	#container {
+		position: absolute;
+		width: 70%;
+		height: 20%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+
+	.right {
+		width: 25%;
+		float: right;
+		padding-top: -1px;
+		
+		@include box-sizing(border-box);
+	}
 }
 
-#forgotten-container{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 260px;
-  height: 180px;
-  border-radius: 10px;
-  background: rgba(3,3,3,0.25);
-  box-shadow: 1px 1px 50px #000;
-  display: none;
+/*IPAD MINI VERTICAL*/
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+	#container {
+		position: absolute;
+		width: 70%;
+		height: 25%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
 }
 
-.orange-btn{
-  background: rgba(87,198,255,.5);
+/*SURFACE PRO 7 VERTICAL*/
+@media screen and (device-width: 912px) and (device-height: 1368px) and (orientation: portrait) {
+	#container {
+		position: absolute;
+		width: 65%;
+		height: 20%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+
 }
+/*SURFACE PRO 7 HORIZONTAL*/
+@media screen and (device-width: 1368px) and (device-height: 912px) and (orientation: landscape) {
+	#container {
+		position: absolute;
+		width: 50%;
+		height: 30%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+}
+
+/*NEXT HUB*/
+@media screen and (device-width: 1024px) and (device-height: 600px) and (orientation: landscape) {
+		#container {
+			position: absolute;
+			width: 60%;
+			height: 38%;
+			margin: auto;
+			border-radius: 5px;
+			background: white;
+			box-shadow: 1px 1px 50px #000;
+			display: none;
+			overflow: hidden;
+		}
+	}
+
+/*GALAXY FOLD VERTICAL*/
+@media screen and (device-width: 280px) and (device-height: 653px) and (orientation: portrait) {
+	#container {
+		position: absolute;
+		width: 76%;
+		height: 27%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+}
+
+/*GALAXY FOLD HORIZONTAL*/
+@media screen and (device-width: 653px) and (device-height: 280px) and (orientation: landscape) {
+	#container {
+		position: absolute;
+		width: 50%;
+		height: 60%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+	a,
+	input {
+		font-size: 14px;
+		padding: 1px;
+	}
+	.right {
+		width: 25%;
+		float: right;
+		padding: -7em 0.5em 2.5em; /*superior, */
+
+		@include box-sizing(border-box);
+	}
+	.left {
+		width: 40%;
+		float: left;
+		padding: 1em 1.5em 2.5em; /*superior, */
+		@include box-sizing(border-box);
+	}
+	.after {
+		content: '';
+		background: #D0D6DA;
+		height: 7em;
+		width: 0.12em;
+		top: 1em;
+		left: 2.5em;
+		right: -.6em;
+		z-index: 900;
+		@include box-shadow(0 9.6em 0 0 #D0D6DA);
+	}
+}
+
+
+/*IPAD PRO VERTICAL*/
+@media screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+	#container {
+		position: absolute;
+		width: 50%;
+		height: 16%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+	.right {
+		width: 25%;
 	
+	}
+}
+
+/*IPAD PRO HORIZONTAL*/
+@media screen and (device-width: 1366px) and (device-height: 1024px) and (orientation: landscape) {
+	#container {
+		position: absolute;
+		width: 45%;
+		height: 26%;
+		margin: auto;
+		border-radius: 5px;
+		background: white;
+		box-shadow: 1px 1px 50px #000;
+		display: none;
+		overflow: hidden;
+	}
+
+	.right {
+		width: 25%;
+	}
+}
+
+/* HORIZONTAL*/
+@media screen and (device-width: 2044px) and (device-height: 1333px) and (orientation: landscape) {
+	#container {
+		width: 47%;
+		height: 30%;
+	}
+	.right {
+		width: 25%;
+		float: left;
+		padding: 0em 7.5em 2em; /*superior, */
+	}
+	.left {
+		width: 40%;
+		float: left;
+		padding: 6.7em 2.5em 2.5em; /*superior, */
+	}
+
+	.after {
+		height: 15em;
+	}
+	a,
+	input {
+		font-size: 35px;
+		padding: 1px;
+	}
+	#login-button {
+		
+		width: 200px;
+		height: 200px;
+		
+	}
+}
