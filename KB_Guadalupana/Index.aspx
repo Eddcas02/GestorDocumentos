@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<%--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>--%>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
@@ -40,7 +41,9 @@ body, html
     margin-left: -75px;
     max-width: 60%;
 }
+
 </style>
+   
 </head>
 <body  class="bg" onload="window.history.forward();" >
     <!--img class="sobre" src="Imagenes/barra.png"  /-->
