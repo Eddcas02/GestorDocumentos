@@ -1,0 +1,2556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\ecasasola\Desktop\SitiosLinux</_PublishTargetUrl>
+    <History>False|2022-06-30T17:47:14.9335278Z;False|2022-06-30T11:46:30.5052036-06:00;False|2022-06-30T09:59:56.2548645-06:00;False|2022-06-30T09:53:20.6418260-06:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AbogadoReporteDataSet.xsc">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="AbogadoReporteDataSet.xss">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="AvDiseños/AvIndex.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="AvDiseños/Botones.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="AvDiseños/estiloalert.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="AvDiseños/estilos401.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="AvDiseños/EstilosAVActividad.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="AvDiseños/EstilosDash.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="AvDiseños/EstilosIndex.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="AvDiseños/EstilosReportes.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="AvDiseños/script.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="AvDiseños/scriptdas.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="AvDiseños/style.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="bdkbguadalupanaDataSet.xsc">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="bdkbguadalupanaDataSet.xss">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="bdkbguadalupanaDataSet4.xsc">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="bdkbguadalupanaDataSet4.xss">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="bdkbguadalupanaDataSetUsuarios.xsc">
+      <publishTime>06/17/2021 15:18:22</publishTime>
+    </File>
+    <File Include="bdkbguadalupanaDataSetUsuarios.xss">
+      <publishTime>06/17/2021 15:18:22</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/BouncyCastle.Crypto.dll">
+      <publishTime>06/14/2022 15:39:18</publishTime>
+    </File>
+    <File Include="bin/ClosedXML.dll">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/ClosedXML.pdb">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.Core.dll">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.Core.pdb">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.dll">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.pdb">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>06/14/2022 15:39:15</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.AspNet.FriendlyUrls.resources.dll">
+      <publishTime>07/30/2013 11:01:46</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Helpers.resources.dll">
+      <publishTime>11/28/2018 07:04:36</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Mvc.resources.dll">
+      <publishTime>11/28/2018 07:00:00</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Optimization.resources.dll">
+      <publishTime>02/11/2014 09:28:40</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Razor.resources.dll">
+      <publishTime>11/28/2018 07:00:22</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Webpages.Deployment.resources.dll">
+      <publishTime>11/28/2018 07:04:36</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Webpages.Razor.resources.dll">
+      <publishTime>11/28/2018 07:04:36</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Webpages.resources.dll">
+      <publishTime>11/28/2018 07:04:36</publishTime>
+    </File>
+    <File Include="bin/ExcelNumberFormat.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/GleamTech.Common.dll">
+      <publishTime>06/17/2022 08:43:34</publishTime>
+    </File>
+    <File Include="bin/GleamTech.DocumentUltimate.dll">
+      <publishTime>06/02/2022 19:40:58</publishTime>
+    </File>
+    <File Include="bin/Google.Protobuf.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/Google.Protobuf.pdb">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/itext.barcodes.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/itext.forms.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/itext.io.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/itext.kernel.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/itext.layout.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/itext.pdfa.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/itext.sign.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/itext.styledxmlparser.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/itext.svg.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/K4os.Compression.LZ4.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/K4os.Compression.LZ4.Streams.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/K4os.Hash.xxHash.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/KB_Guadalupana.dll">
+      <publishTime>06/30/2022 11:48:46</publishTime>
+    </File>
+    <File Include="bin/KB_Guadalupana.pdb">
+      <publishTime>06/30/2022 11:48:46</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.MSXML.dll">
+      <publishTime>03/07/2022 16:22:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.DataVisualization.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Design.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebDesign.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WinForms.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.OLE.Interop.dll">
+      <publishTime>03/07/2022 16:22:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.Shell.Interop.8.0.dll">
+      <publishTime>03/07/2022 16:22:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.Shell.Interop.dll">
+      <publishTime>03/07/2022 16:22:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.TextManager.Interop.8.0.dll">
+      <publishTime>03/07/2022 16:22:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.TextManager.Interop.dll">
+      <publishTime>03/07/2022 16:22:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/MySqlConnector.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/14/2022 15:39:18</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Renci.SshNet.dll">
+      <publishTime>06/14/2022 15:39:19</publishTime>
+    </File>
+    <File Include="bin/Rotativa.dll">
+      <publishTime>06/14/2022 15:39:19</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/msvcr120.dll">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/SqlServerSpatial140.dll">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/msvcr120.dll">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/SqlServerSpatial140.dll">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="bin/System.Buffers.dll">
+      <publishTime>06/14/2022 15:39:22</publishTime>
+    </File>
+    <File Include="bin/System.IO.Packaging.dll">
+      <publishTime>06/14/2022 15:39:23</publishTime>
+    </File>
+    <File Include="bin/System.Memory.dll">
+      <publishTime>06/14/2022 15:39:23</publishTime>
+    </File>
+    <File Include="bin/System.Numerics.Vectors.dll">
+      <publishTime>06/14/2022 15:39:23</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>06/14/2022 15:39:24</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.Extensions.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>06/14/2022 15:39:16</publishTime>
+    </File>
+    <File Include="bin/Ubiety.Dns.Core.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/14/2022 15:39:26</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="bin/Zstandard.Net.dll">
+      <publishTime>06/14/2022 15:39:17</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="chart.xsc">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="chart.xss">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="Conjuntodedatosdataset.xsc">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Conjuntodedatosdataset.xss">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="CRM-Estilos/EstiloGridClientes.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="CRM-Estilos/Estiloparagraficas.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="CRM-Estilos/estiloparamantenimientos.css">
+      <publishTime>05/24/2021 22:29:48</publishTime>
+    </File>
+    <File Include="CRM-Estilos/estiloparamodal.css">
+      <publishTime>07/17/2021 18:45:14</publishTime>
+    </File>
+    <File Include="CRM-Estilos/Estiloparareasignacionlead.css">
+      <publishTime>07/17/2021 18:46:04</publishTime>
+    </File>
+    <File Include="CRM-Estilos/EstiloReportes.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="CRM-Estilos/Estilos.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="CRM-Estilos/Estilosalertas.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="CRM-Estilos/Estiloscombos.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="CRM-Estilos/EstiloSeguimientoLead.css">
+      <publishTime>07/17/2021 18:46:54</publishTime>
+    </File>
+    <File Include="CRM-Estilos/Estilo_botones.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="CRM-Script/Script.js">
+      <publishTime>05/24/2021 22:29:48</publishTime>
+    </File>
+    <File Include="CRM-Script/scriptparamodal.js">
+      <publishTime>07/17/2021 18:43:44</publishTime>
+    </File>
+    <File Include="DataMontos.xsc">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="DataMontos.xss">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="DataSetAbogado.xsc">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="DataSetAbogado.xss">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="DataSetTablaGeneral.xsc">
+      <publishTime>01/17/2022 08:46:42</publishTime>
+    </File>
+    <File Include="DataSetTablaGeneral.xss">
+      <publishTime>01/17/2022 08:46:42</publishTime>
+    </File>
+    <File Include="DiseñoCss/estilosav.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="DiseñoCss/EstilosavSub.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="DiseñosGrid/Grids.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="DpiDataSet.xsc">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="DpiDataSet.xss">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="estatico/css/barra.css">
+      <publishTime>07/26/2021 14:47:02</publishTime>
+    </File>
+    <File Include="estatico/css/bootstrap-select.css">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/css/bootstrap.min.css">
+      <publishTime>07/22/2021 15:37:28</publishTime>
+    </File>
+    <File Include="estatico/css/bootstrap.min.js">
+      <publishTime>07/22/2021 15:37:28</publishTime>
+    </File>
+    <File Include="estatico/css/completo.css">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/css/creaciontest.css">
+      <publishTime>07/26/2021 16:01:36</publishTime>
+    </File>
+    <File Include="estatico/css/enviareva.css">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/css/fondogris.css">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/css/inicio.css">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/css/iniciox.css">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/css/login.css">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/css/respuestas.css">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/css/vista00.css">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/css/vistatest.css">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/iconos/delete.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/azul.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/eliminar.jpg">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/10.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/4.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/5.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/6.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/7.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/8.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/9.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/transparente/1.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/transparente/2.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/transparente/3.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/transparente/4.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/transparente/5.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/transparente/nop.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/emotes/transparente/quitar.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/excel.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/fondo2.jpg">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/fondoazul.jpg">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/fondoblanco.jpg">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/fondogris.jpg">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/logocope.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/Logotipo.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/menu.jpg">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/menu2.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/imagenes/salir.png">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/js.rar">
+      <publishTime>08/13/2021 16:32:54</publishTime>
+    </File>
+    <File Include="estatico/js/bootstrap-select.js">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/js/bootstrap-select.js.map">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/js/bootstrap-select.min.js">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/js/bootstrap-select.min.js.map">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/js/busqueda.js">
+      <publishTime>07/22/2021 14:49:34</publishTime>
+    </File>
+    <File Include="estatico/js/jquery-1.11.0.min.js">
+      <publishTime>07/22/2021 14:58:40</publishTime>
+    </File>
+    <File Include="EXDiseños/barcode.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/barcode.wav">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/busqueda.js">
+      <publishTime>07/28/2021 08:37:52</publishTime>
+    </File>
+    <File Include="EXDiseños/BusquedaStyle.css">
+      <publishTime>12/30/2021 14:12:10</publishTime>
+    </File>
+    <File Include="EXDiseños/estilolector.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/EstilosDashboard.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/EstilosGenExp.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/EstilosGenExpmenu.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/EstilosMensajeria.css">
+      <publishTime>05/19/2021 23:43:34</publishTime>
+    </File>
+    <File Include="EXDiseños/EstiloTablas.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/ExtiloExEnvio.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/jquery.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/scriptbarra.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/scriptdash.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/ScriptGenerarEXP.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/scriptpaginas.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/ScriptTablas.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/scriptvalidar.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/stylebarra.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/stylepaginas.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="EXDiseños/Trackestilo.css">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="FechaActualData.xsc">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="FechaActualData.xss">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="FechaActualDataset.xsc">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="FechaActualDataset.xss">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="FechaDataset.xsc">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="FechaDataset.xss">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="graficmonto.xsc">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="graficmonto.xss">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="Imagenes/addnew.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/barra.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/cancel.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/delete.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/edit.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/EP-Guadalupana.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/F1.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/F2.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Fondo.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/f_logo.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/f_logo.svg">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/imagendeformato.PNG">
+      <publishTime>10/08/2021 09:21:50</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/AsignarLote1.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/AsignarLote2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/AsignarLote3.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/CrearLote1.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/CrearLote2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/CrearLote3.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/imagendeformato.PNG">
+      <publishTime>10/08/2021 09:21:50</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/KB.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoCuentas1.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoCuentas2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoCuentas3.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoEstado.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoEstado1.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoEstado2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoEstatus.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoEstatus1.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoEstatus2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoInmuebles1.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoInmuebles2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoInmuebles3.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoMonedas.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoMonedas2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoMonedas3.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoPep.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoPep1.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoPep2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoPrestamos.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoPrestamos1.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoPrestamos2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoTelefono.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoTelefono1.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoTelefono2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoVehiculos1.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoVehiculos2.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes/MantenimientoVehiculos3.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_areas/Auditoria_Interna.jpg">
+      <publishTime>06/15/2021 21:34:18</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_areas/Comision_Vigilancia.jpg">
+      <publishTime>06/15/2021 21:34:36</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_areas/Consejo_Administracion.jpg">
+      <publishTime>06/15/2021 21:35:34</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_areas/Gerencia_Administartiva.jpg">
+      <publishTime>06/15/2021 21:36:38</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_areas/Gerencia_Financiera.jpg">
+      <publishTime>06/15/2021 21:36:48</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_areas/Gerencia_General.jpg">
+      <publishTime>06/15/2021 21:36:58</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_areas/Gerencia_Juridica.jpg">
+      <publishTime>06/15/2021 21:37:08</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_areas/Gerencia_Negocios.jpg">
+      <publishTime>06/15/2021 21:37:28</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_areas/Unidad_de_Cumplimiento.jpg">
+      <publishTime>06/15/2021 21:37:42</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Buscar_arqueo.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Cheques_Cajero.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Cheques_tesoreria.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Detalle_CajaChica.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Detalle_Cajero.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Detalle_CajeroAut.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Detalle_tesoreria.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Detalle_tesoreriaDol.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Encabezado_CajaChica.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Encabezado_Cajero.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Encabezado_CajeroAut.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Encabezado_Tesoreria.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/guardar.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Guardar_siguiente.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/imprimir.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Opciones_arqueos.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/Registro_CajaChica.PNG">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/SA-Guadalupana-Azul.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_arqueos/SA-Guadalupana1-Blanco.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_procesos/encabezado_cheque.jpg">
+      <publishTime>09/03/2021 08:20:54</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_procesos/Logotipo.png">
+      <publishTime>09/02/2021 12:58:14</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_procesos/lupa.png">
+      <publishTime>12/14/2021 09:09:22</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_procesos/PJ-GUADALUPANA-BLANCO.png">
+      <publishTime>09/03/2021 08:20:54</publishTime>
+    </File>
+    <File Include="Imagenes/Imagenes_procesos/PJ-GUADALUPANA.png">
+      <publishTime>09/02/2021 12:58:14</publishTime>
+    </File>
+    <File Include="Imagenes/Logo.png">
+      <publishTime>06/03/2022 11:05:49</publishTime>
+    </File>
+    <File Include="Imagenes/Logo2.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/Logotipo.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Imagenes/save.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>06/21/2022 15:53:24</publishTime>
+    </File>
+    <File Include="montodatos.xsc">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="montodatos.xss">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="MontoDatosReporte.xsc">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="MontoDatosReporte.xss">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="MontoRes.xsc">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="MontoRes.xss">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="MontoResul.xsc">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="MontoResul.xss">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="mydbDataSet.xsc">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="mydbDataSet.xss">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="NombreAbogadoData.xsc">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="NombreAbogadoData.xss">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="NombreUsuarioDataSet.xsc">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="NombreUsuarioDataSet.xss">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="preg.xsc">
+      <publishTime>07/13/2021 11:46:54</publishTime>
+    </File>
+    <File Include="preg.xss">
+      <publishTime>07/13/2021 11:46:54</publishTime>
+    </File>
+    <File Include="preguntasdata.xsc">
+      <publishTime>07/12/2021 11:18:12</publishTime>
+    </File>
+    <File Include="preguntasdata.xss">
+      <publishTime>07/12/2021 11:18:12</publishTime>
+    </File>
+    <File Include="Properties/DataSources/System.Data.DataSet.datasource">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Properties/DataSources/System.Data.DataTable.datasource">
+      <publishTime>01/18/2022 20:21:40</publishTime>
+    </File>
+    <File Include="REGDISE/estilosReg.css">
+      <publishTime>12/13/2021 09:41:42</publishTime>
+    </File>
+    <File Include="REPORTENOTASDATA.xsc">
+      <publishTime>07/07/2021 21:25:06</publishTime>
+    </File>
+    <File Include="REPORTENOTASDATA.xss">
+      <publishTime>07/07/2021 21:25:06</publishTime>
+    </File>
+    <File Include="reportependientesdata.xsc">
+      <publishTime>07/07/2021 08:13:10</publishTime>
+    </File>
+    <File Include="reportependientesdata.xss">
+      <publishTime>07/07/2021 08:13:10</publishTime>
+    </File>
+    <File Include="ReportesAv/ReporteUsuarios.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.map">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.map">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="SQEstilos/EstilosDash.css">
+      <publishTime>05/27/2021 09:48:20</publishTime>
+    </File>
+    <File Include="SQEstilos/Estiloseval.css">
+      <publishTime>07/07/2021 15:35:32</publishTime>
+    </File>
+    <File Include="SQEstilos/Estilosmalla.css">
+      <publishTime>06/08/2021 11:40:04</publishTime>
+    </File>
+    <File Include="SQEstilos/EstilosMenu.css">
+      <publishTime>01/28/2022 02:38:42</publishTime>
+    </File>
+    <File Include="SQEstilos/jseval.js">
+      <publishTime>10/26/2021 10:52:52</publishTime>
+    </File>
+    <File Include="SQEstilos/jsmenu.js">
+      <publishTime>05/26/2021 09:18:58</publishTime>
+    </File>
+    <File Include="SqlServerTypes/readme.htm">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x64/msvcr120.dll">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x64/SqlServerSpatial140.dll">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x86/msvcr120.dll">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x86/SqlServerSpatial140.dll">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="sumamonto.xsc">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="sumamonto.xss">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="sumatoriatotal.xsc">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="sumatoriatotal.xss">
+      <publishTime>05/10/2021 16:18:30</publishTime>
+    </File>
+    <File Include="TareasUsuariosReporte.xsc">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="TareasUsuariosReporte.xss">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="TareaUserReport.xsc">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="TareaUserReport.xss">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="UsuariosReporteControl.xsc">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="UsuariosReporteControl.xss">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="UsuarioTiitulo.xsc">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="UsuarioTiitulo.xss">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Agenda/AgendaPrin.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Agenda/Av_AsignarTarea.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Agenda/Av_ModTarea.aspx">
+      <publishTime>06/01/2021 10:54:30</publishTime>
+    </File>
+    <File Include="Views/Agenda/Av_Reasignar.aspx">
+      <publishTime>06/01/2021 10:54:12</publishTime>
+    </File>
+    <File Include="Views/Agenda/Av_Subtareas.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Agenda/Av_Tracking.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Agenda/DashBoard.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Agenda/Error 401.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Agenda/NuevaTarea.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Agenda/pruebas.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/ArqueoCajaChica.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/ArqueoCajero.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/ArqueoCajero2.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/ArqueoCajeroAutomatico.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/ArqueoTesoreria.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/ArqueoTesoreria2.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/Manual/ManualCajaChica.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/Manual/ManualCajero.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/Manual/ManualCajeroAutomatico.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/Manual/ManualTesoreria.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Arqueos/MenuArqueos.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_AgenciaHallazgos.aspx">
+      <publishTime>01/05/2022 10:56:22</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_EnvioEx.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_GenerarBC.aspx">
+      <publishTime>08/24/2021 23:35:08</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_GenExpedientes.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_hallazgosmesa.aspx">
+      <publishTime>01/04/2022 08:09:40</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_LeerBC.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_pendienteAg.aspx">
+      <publishTime>01/03/2022 08:59:12</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_Principal.aspx">
+      <publishTime>01/06/2022 10:21:28</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_reportes.aspx">
+      <publishTime>09/01/2021 09:00:44</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_verhallazgos.aspx">
+      <publishTime>12/14/2021 09:55:48</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_VistaArchivo.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_VistaJuridico.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_VistaMensajeria.aspx">
+      <publishTime>05/19/2021 23:29:14</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_VistaMesaQA.aspx">
+      <publishTime>01/03/2022 07:32:02</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Ex_VistaNegocios.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/ControlEX/reporteNegocios.aspx">
+      <publishTime>12/10/2021 08:13:26</publishTime>
+    </File>
+    <File Include="Views/ControlEX/ReporteVentana.aspx">
+      <publishTime>01/24/2022 09:48:18</publishTime>
+    </File>
+    <File Include="Views/ControlEX/Tracking.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Administracion/Controldedespidos/Trasalado_por_despido.aspx">
+      <publishTime>07/17/2021 20:38:32</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Administracion/Mantenimientos/CRM_Finalidaddeservicio.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Administracion/Mantenimientos/CRM_Mantcontactollamadas.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Administracion/Mantenimientos/CRM_Mantdescripcionestado.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Administracion/Mantenimientos/CRM_Mantfrasesdeldia.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Administracion/Mantenimientos/CRM_Mantprospecto.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Administracion/Mantenimientos/CRM_Manttipodomicilio.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Administracion/Mantenimientos/CRM_Manttiposervicio.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Administracion/Reasignaciones/Asignacionporlead.aspx">
+      <publishTime>07/17/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Administracion/Reasignaciones/Reasignar_prospecto.aspx">
+      <publishTime>07/17/2021 23:46:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Agenda/CRM_Agenda.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Asesores/Archivos/06.01.21 Leads Tele Mercadeo delimitado.csv">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Asesores/CrearAlerta.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Asesores/CRM_Alertas.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Asesores/CRM_Asesores.aspx">
+      <publishTime>10/16/2021 12:26:24</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Asesores/CRM_Crearreferido.aspx">
+      <publishTime>05/10/2021 16:23:56</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Asesores/CRM_Prospectosenproceso.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Asesores/CRM_Prospectosfinalizados.aspx">
+      <publishTime>05/10/2021 16:23:56</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Catalogo_clientes/Prospectoenprocesos.aspx">
+      <publishTime>07/17/2021 20:54:52</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Catalogo_clientes/ProspectosFinalizados.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Catalogo_clientes/Prospectosrechazados.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Dashboard/CRM_Dashboard.aspx">
+      <publishTime>07/17/2021 20:57:14</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Dashboard/CRM_SubestadoAprobado.aspx">
+      <publishTime>07/17/2021 21:03:12</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Dashboard/CRM_SubestadoNoaprobado.aspx">
+      <publishTime>07/17/2021 21:11:44</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Dashboard/CRM_SubestadoNocontesta.aspx">
+      <publishTime>07/17/2021 21:14:12</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Dashboard/CRM_SubestadoProceso.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Ingresodata/Archivos/1802201 prueba delimitada.csv">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Ingresodata/CRM_Ingresodedatos.aspx">
+      <publishTime>07/17/2021 23:53:34</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Ingresodata/IngresoManual.aspx">
+      <publishTime>07/19/2021 08:30:06</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/JefesDeAgencia/SeguimientoLead.aspx">
+      <publishTime>03/03/2022 15:46:58</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/MenuPrincipal/CRM_MenuPrincipal.aspx">
+      <publishTime>07/17/2021 22:05:42</publishTime>
+    </File>
+    <File Include="Views/CRM-SISTEMA/Reporteria/CRM_Reporteria.aspx">
+      <publishTime>10/08/2021 10:20:24</publishTime>
+    </File>
+    <File Include="Views/EP/Egresos/est_egresos.aspx">
+      <publishTime>02/25/2022 14:27:58</publishTime>
+    </File>
+    <File Include="Views/EP/Estaticos/bloqueo.js">
+      <publishTime>02/24/2022 14:54:28</publishTime>
+    </File>
+    <File Include="Views/EP/Estaticos/cssContene.css">
+      <publishTime>06/10/2022 08:34:41</publishTime>
+    </File>
+    <File Include="Views/EP/Estaticos/estilosbarrita.css">
+      <publishTime>02/22/2022 14:48:22</publishTime>
+    </File>
+    <File Include="Views/EP/Estaticos/jsbarrita.js">
+      <publishTime>02/22/2022 14:39:46</publishTime>
+    </File>
+    <File Include="Views/EP/Estaticos/validacionletrasnum.js">
+      <publishTime>03/02/2022 08:00:54</publishTime>
+    </File>
+    <File Include="Views/EP/est_activoscaja.aspx">
+      <publishTime>03/04/2022 09:56:44</publishTime>
+    </File>
+    <File Include="Views/EP/est_cuentaspc.aspx">
+      <publishTime>02/24/2022 13:36:56</publishTime>
+    </File>
+    <File Include="Views/EP/est_elegirlote.aspx">
+      <publishTime>03/01/2022 07:41:52</publishTime>
+    </File>
+    <File Include="Views/EP/est_equipo.aspx">
+      <publishTime>03/03/2022 15:47:04</publishTime>
+    </File>
+    <File Include="Views/EP/est_estudios.aspx">
+      <publishTime>02/24/2022 13:36:46</publishTime>
+    </File>
+    <File Include="Views/EP/est_familiares.aspx">
+      <publishTime>02/25/2022 11:52:10</publishTime>
+    </File>
+    <File Include="Views/EP/est_informacionGeneral.aspx">
+      <publishTime>03/04/2022 09:14:48</publishTime>
+    </File>
+    <File Include="Views/EP/est_inventarios.aspx">
+      <publishTime>02/24/2022 13:36:38</publishTime>
+    </File>
+    <File Include="Views/EP/est_moviliario.aspx">
+      <publishTime>01/27/2022 09:15:52</publishTime>
+    </File>
+    <File Include="Views/EP/est_pp.aspx">
+      <publishTime>01/17/2022 07:29:58</publishTime>
+    </File>
+    <File Include="Views/EP/est_principal.aspx">
+      <publishTime>03/04/2022 14:53:30</publishTime>
+    </File>
+    <File Include="Views/EP/est_telefonos.aspx">
+      <publishTime>02/24/2022 13:36:28</publishTime>
+    </File>
+    <File Include="Views/EP/Exportacion/est_detalleLotes.aspx">
+      <publishTime>02/28/2022 14:16:28</publishTime>
+    </File>
+    <File Include="Views/EP/Exportacion/est_lotesadm.aspx">
+      <publishTime>03/02/2022 07:51:34</publishTime>
+    </File>
+    <File Include="Views/EP/Exportacion/Venanalotes.aspx">
+      <publishTime>03/04/2022 14:25:10</publishTime>
+    </File>
+    <File Include="Views/EP/Exportacion/ventanaUsuarios.aspx">
+      <publishTime>03/04/2022 15:24:46</publishTime>
+    </File>
+    <File Include="Views/EP/Exportacion/ventanausuarioshabil.aspx">
+      <publishTime>02/28/2022 11:33:20</publishTime>
+    </File>
+    <File Include="Views/EP/Ingresos/est_ingresos.aspx">
+      <publishTime>03/03/2022 15:47:02</publishTime>
+    </File>
+    <File Include="Views/EP/Ingresos/est_ingresosrela.aspx">
+      <publishTime>02/25/2022 14:26:58</publishTime>
+    </File>
+    <File Include="Views/EP/Ingresos/Ventanas/VentanaNegocios.aspx">
+      <publishTime>03/03/2022 15:46:30</publishTime>
+    </File>
+    <File Include="Views/EP/Ingresos/Ventanas/VentanaOrtosI.aspx">
+      <publishTime>03/03/2022 15:46:28</publishTime>
+    </File>
+    <File Include="Views/EP/Ingresos/Ventanas/VentanaRemesas.aspx">
+      <publishTime>03/03/2022 15:46:24</publishTime>
+    </File>
+    <File Include="Views/EP/menaje.aspx">
+      <publishTime>03/03/2022 15:47:00</publishTime>
+    </File>
+    <File Include="Views/EP/Pasivo/est_contingente.aspx">
+      <publishTime>02/24/2022 14:15:30</publishTime>
+    </File>
+    <File Include="Views/EP/Pasivo/est_cuentaspp.aspx">
+      <publishTime>02/24/2022 14:16:34</publishTime>
+    </File>
+    <File Include="Views/EP/Pasivo/est_tarjetas.aspx">
+      <publishTime>03/03/2022 15:47:02</publishTime>
+    </File>
+    <File Include="Views/EP/Pasivo/Ventanas/VentanaContingente.aspx">
+      <publishTime>03/03/2022 15:46:56</publishTime>
+    </File>
+    <File Include="Views/EP/Pasivo/Ventanas/Ventanacuentaspp.aspx">
+      <publishTime>03/03/2022 15:46:40</publishTime>
+    </File>
+    <File Include="Views/EP/Pasivo/Ventanas/VentanaPrestamos.aspx">
+      <publishTime>03/03/2022 15:46:26</publishTime>
+    </File>
+    <File Include="Views/EP/Pasivo/Ventanas/VentanaTC.aspx">
+      <publishTime>03/03/2022 15:46:22</publishTime>
+    </File>
+    <File Include="Views/EP/Step/jsstep.js">
+      <publishTime>02/14/2022 09:51:00</publishTime>
+    </File>
+    <File Include="Views/EP/Step/Step.aspx">
+      <publishTime>02/14/2022 10:14:06</publishTime>
+    </File>
+    <File Include="Views/EP/Step/stepstilos.css">
+      <publishTime>02/14/2022 09:51:10</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaActivosCaja.aspx">
+      <publishTime>03/03/2022 15:46:56</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaBienes.aspx">
+      <publishTime>02/16/2022 10:33:24</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaCPC.aspx">
+      <publishTime>03/03/2022 15:46:54</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaEmergencias.aspx">
+      <publishTime>03/03/2022 15:46:38</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaEstudios.aspx">
+      <publishTime>02/16/2022 09:24:56</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/Ventanafamiliares.aspx">
+      <publishTime>02/18/2022 13:40:36</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaInventario.aspx">
+      <publishTime>03/03/2022 15:46:36</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaInversiones.aspx">
+      <publishTime>03/03/2022 15:46:34</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaMobiliario.aspx">
+      <publishTime>03/03/2022 15:46:32</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaOtrosEstudios.aspx">
+      <publishTime>02/08/2022 11:11:12</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaTelefonos.aspx">
+      <publishTime>03/03/2022 15:46:20</publishTime>
+    </File>
+    <File Include="Views/EP/Ventanas/VentanaVehiculos.aspx">
+      <publishTime>03/03/2022 15:46:18</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/Principal.aspx">
+      <publishTime>10/12/2021 11:30:14</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/pruebas.aspx">
+      <publishTime>06/08/2021 10:20:06</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/SQ_Dashboard.aspx">
+      <publishTime>05/27/2021 10:23:56</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/SQ_Evaluacion.aspx">
+      <publishTime>11/15/2021 07:38:00</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/SQ_EvaluacionAsignacion.aspx">
+      <publishTime>06/02/2021 10:44:38</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/SQ_EvaluacionCrear.aspx">
+      <publishTime>05/31/2021 12:39:10</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/SQ_EvaluacionMod.aspx">
+      <publishTime>05/31/2021 14:26:04</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/SQ_ImprimirEvaluacion.aspx">
+      <publishTime>11/22/2021 10:35:18</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/SQ_Personal.aspx">
+      <publishTime>06/02/2021 11:33:36</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/SQ_Preguntas.aspx">
+      <publishTime>06/02/2021 11:41:14</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/SQ_Puestos.aspx">
+      <publishTime>06/03/2021 09:18:14</publishTime>
+    </File>
+    <File Include="Views/Evaluaciones/temporal.aspx">
+      <publishTime>07/27/2021 12:02:22</publishTime>
+    </File>
+    <File Include="Views/Excedentes/DiseñosExcedentes/estilosBtn.css">
+      <publishTime>12/24/2021 07:44:06</publishTime>
+    </File>
+    <File Include="Views/Excedentes/Registros.aspx">
+      <publishTime>03/03/2022 15:46:52</publishTime>
+    </File>
+    <File Include="Views/Excedentes/Reportes.aspx">
+      <publishTime>12/09/2021 14:13:20</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/AsignarHallazgo.aspx">
+      <publishTime>06/09/2021 09:14:10</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/ConsultaHallazgo.aspx">
+      <publishTime>06/09/2021 09:14:10</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/ConsultarHallazgos.aspx">
+      <publishTime>06/09/2021 09:18:28</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/CrearHallazgo.aspx">
+      <publishTime>06/11/2021 08:10:06</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/EditarArea.aspx">
+      <publishTime>06/09/2021 09:14:10</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/EditarGerencia.aspx">
+      <publishTime>06/09/2021 09:14:10</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/EditarHallazgo.aspx">
+      <publishTime>06/15/2021 20:04:06</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/InformeHallazgos.aspx">
+      <publishTime>06/09/2021 12:54:28</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/MantenimientoGerencias.aspx">
+      <publishTime>06/09/2021 09:14:10</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/MatrizHallazgos.aspx">
+      <publishTime>06/09/2021 09:18:28</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/MenuHallazgos.aspx">
+      <publishTime>06/09/2021 09:14:10</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/RespuestaHallazgo.aspx">
+      <publishTime>06/09/2021 09:18:28</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/Seguridad.aspx">
+      <publishTime>06/09/2021 09:18:28</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/VistaEliminar.aspx">
+      <publishTime>06/10/2021 08:48:32</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/VistaHallazgo.aspx">
+      <publishTime>06/09/2021 13:51:34</publishTime>
+    </File>
+    <File Include="Views/Hallazgos/VistaHallazgo1.aspx">
+      <publishTime>06/10/2021 08:54:08</publishTime>
+    </File>
+    <File Include="Views/Imagenes/fileExcel.png">
+      <publishTime>06/20/2022 11:57:02</publishTime>
+    </File>
+    <File Include="Views/Imagenes/filePdf.png">
+      <publishTime>06/17/2022 08:30:50</publishTime>
+    </File>
+    <File Include="Views/Imagenes/fileWord.png">
+      <publishTime>06/20/2022 11:56:56</publishTime>
+    </File>
+    <File Include="Views/Imagenes/lupa.png">
+      <publishTime>06/17/2022 08:30:50</publishTime>
+    </File>
+    <File Include="Views/Imagenes/verDoc.png">
+      <publishTime>06/17/2022 08:30:50</publishTime>
+    </File>
+    <File Include="Views/MantenimientosControl/controlAgenda.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/MantenimientosControl/controlArqueos.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/MantenimientosControl/controlCRM.aspx">
+      <publishTime>07/17/2021 23:50:36</publishTime>
+    </File>
+    <File Include="Views/MantenimientosControl/controlExpedientes.aspx">
+      <publishTime>12/08/2021 07:43:02</publishTime>
+    </File>
+    <File Include="Views/MantenimientosControl/ControlProcesos.aspx">
+      <publishTime>06/14/2021 16:31:18</publishTime>
+    </File>
+    <File Include="Views/MantenimientosControl/controlProcesosJudiciales.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/MantenimientosControl/SeguridadArqueo.aspx">
+      <publishTime>05/19/2021 22:30:16</publishTime>
+    </File>
+    <File Include="Views/PaginaDeError/Error404.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Procesos/Busqueda.aspx">
+      <publishTime>06/30/2022 09:50:00</publishTime>
+    </File>
+    <File Include="Views/Procesos/BusquedaCategorias.aspx">
+      <publishTime>06/18/2021 17:44:02</publishTime>
+    </File>
+    <File Include="Views/Procesos/BusquedaGeneral.aspx">
+      <publishTime>06/14/2022 16:48:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/DocumentosAEditar.aspx">
+      <publishTime>06/14/2022 16:48:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/EditarDocumentos.aspx">
+      <publishTime>06/17/2022 08:30:50</publishTime>
+    </File>
+    <File Include="Views/Procesos/Estaticos/Modales.css">
+      <publishTime>06/14/2022 16:48:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/MantenimientoAreas.aspx">
+      <publishTime>06/14/2022 16:48:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/MantenimientoUsuarios.aspx">
+      <publishTime>06/14/2022 16:48:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/MDIprocesos.aspx">
+      <publishTime>06/02/2022 09:30:59</publishTime>
+    </File>
+    <File Include="Views/Procesos/MenuCategorias.aspx">
+      <publishTime>06/03/2022 11:29:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/MenuCategorias2.aspx">
+      <publishTime>06/17/2022 08:30:50</publishTime>
+    </File>
+    <File Include="Views/Procesos/MenuPrincipal.aspx">
+      <publishTime>06/14/2022 16:48:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/MenuPrueba.aspx">
+      <publishTime>06/15/2021 21:38:38</publishTime>
+    </File>
+    <File Include="Views/Procesos/RegistroDocumento.aspx">
+      <publishTime>06/17/2022 10:17:49</publishTime>
+    </File>
+    <File Include="Views/Procesos/Reporte.aspx">
+      <publishTime>06/14/2022 16:48:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/Reportes/FormularioUsuarios.aspx">
+      <publishTime>06/17/2021 15:28:08</publishTime>
+    </File>
+    <File Include="Views/Procesos/Reportes/Report1.rdlc">
+      <publishTime>06/14/2022 16:48:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/Reportes/Report2.rdlc">
+      <publishTime>06/14/2022 16:48:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/Reportes/ReporteDocumentos.aspx">
+      <publishTime>06/09/2021 23:20:32</publishTime>
+    </File>
+    <File Include="Views/Procesos/ReporteUsuarios.aspx">
+      <publishTime>06/14/2022 16:48:51</publishTime>
+    </File>
+    <File Include="Views/Procesos/Ventanas/UsuariosMant.aspx">
+      <publishTime>06/21/2022 10:03:25</publishTime>
+    </File>
+    <File Include="Views/Procesos/ventanaVista.aspx">
+      <publishTime>06/10/2022 08:34:41</publishTime>
+    </File>
+    <File Include="Views/Procesos/visordocumentos.aspx">
+      <publishTime>06/17/2022 08:43:33</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/AsignacionUsuario.aspx">
+      <publishTime>08/19/2021 08:55:38</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/AsignarProceso.aspx">
+      <publishTime>03/01/2022 22:54:38</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/Bitacora.aspx">
+      <publishTime>01/19/2022 20:18:22</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/CertificacionContable.aspx">
+      <publishTime>02/24/2022 14:13:22</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/CertificacionJuridico.aspx">
+      <publishTime>12/13/2021 09:41:38</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/CertificacionJuridicoEnviados.aspx">
+      <publishTime>08/21/2021 11:41:08</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/ControlIncidente.aspx">
+      <publishTime>01/10/2022 22:28:26</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/CreditosCertificacionJuridico.aspx">
+      <publishTime>12/14/2021 09:31:04</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/Dashboard.aspx">
+      <publishTime>08/23/2021 14:42:58</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DashboardAbogado.aspx">
+      <publishTime>09/09/2021 20:29:16</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DashboardCobros.aspx">
+      <publishTime>09/08/2021 16:26:14</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DashboardConta.aspx">
+      <publishTime>09/08/2021 16:30:30</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DashboardJuridico.aspx">
+      <publishTime>09/08/2021 16:32:52</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/Desistimiento.aspx">
+      <publishTime>12/06/2021 14:57:50</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DevueltosCertificacionJuridico.aspx">
+      <publishTime>12/03/2021 12:07:14</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DevueltosCobros.aspx">
+      <publishTime>03/01/2022 22:45:32</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DevueltosConta.aspx">
+      <publishTime>12/03/2021 12:03:26</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DevueltosFactura.aspx">
+      <publishTime>12/27/2021 11:04:42</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DevueltosSolicitudCheque.aspx">
+      <publishTime>08/24/2021 08:59:26</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DiligenciamientoCartera.aspx">
+      <publishTime>12/14/2021 10:37:10</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DiligenciamientoCobros.aspx">
+      <publishTime>12/14/2021 12:20:42</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/DiligenciamientoMedidas.aspx">
+      <publishTime>12/14/2021 14:35:20</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/Documentacion.aspx">
+      <publishTime>02/08/2022 15:49:04</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/EditarCreditos.aspx">
+      <publishTime>03/01/2022 22:43:50</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/ExpedientesEntregados.aspx">
+      <publishTime>09/08/2021 15:03:42</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/FacturacionAbogado.aspx">
+      <publishTime>12/03/2021 12:41:56</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/FacturacionDesistimiento.aspx">
+      <publishTime>08/10/2021 14:22:52</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/MedidasVoluntarias.aspx">
+      <publishTime>12/03/2021 12:27:12</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/MenuPrincipal.aspx">
+      <publishTime>09/09/2021 16:07:12</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/MenuPrincipalProcesos.aspx">
+      <publishTime>08/20/2021 11:17:08</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/NotificacionApremio.aspx">
+      <publishTime>12/13/2021 14:19:56</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/NotificacionAsociado.aspx">
+      <publishTime>12/03/2021 12:46:58</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/NotificacionViaApremio.aspx">
+      <publishTime>12/08/2021 09:22:54</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/NuevaInvestigacion.aspx">
+      <publishTime>12/03/2021 12:33:18</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/NuevaInvestigacionCartera.aspx">
+      <publishTime>12/03/2021 12:40:28</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PagoExtrajudicial.aspx">
+      <publishTime>12/03/2021 14:45:32</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteCertificacion.aspx">
+      <publishTime>12/22/2021 09:40:48</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteDesistimiento.aspx">
+      <publishTime>12/22/2021 10:08:46</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteDiligenciamiento.aspx">
+      <publishTime>12/22/2021 10:10:04</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteFacturacionAbogado.aspx">
+      <publishTime>12/27/2021 10:02:18</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteNotificacion.aspx">
+      <publishTime>12/22/2021 10:10:42</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteNotificacionApremio.aspx">
+      <publishTime>12/22/2021 10:11:20</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendientePagoExtrajudicial.aspx">
+      <publishTime>12/01/2021 16:12:38</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendientePresentacionDemanda.aspx">
+      <publishTime>12/22/2021 10:11:52</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteReciboPago.aspx">
+      <publishTime>12/22/2021 10:12:10</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteRequerimientoPago.aspx">
+      <publishTime>12/27/2021 09:40:36</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteResolucion.aspx">
+      <publishTime>12/01/2021 16:13:38</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteResolucionFavorable.aspx">
+      <publishTime>12/22/2021 10:13:32</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PendienteSolicitudCheque.aspx">
+      <publishTime>12/22/2021 10:14:24</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PresentacionDemanda.aspx">
+      <publishTime>12/03/2021 12:09:46</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/PrimeraResolucion.aspx">
+      <publishTime>12/03/2021 12:21:14</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/ProcesoJudicial.aspx">
+      <publishTime>03/01/2022 16:15:14</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/ProcesosAsignadosJuridico.aspx">
+      <publishTime>05/10/2021 08:14:34</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/ReciboPagoExtrajudicial.aspx">
+      <publishTime>12/03/2021 14:27:18</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/ReporteCompleto.aspx">
+      <publishTime>01/18/2022 19:45:14</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/Reportes/ReporteAbogados.aspx">
+      <publishTime>05/12/2021 16:31:02</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/Reportes/Reporte_general.aspx">
+      <publishTime>01/17/2022 12:22:42</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/RequerimientoPago.aspx">
+      <publishTime>12/23/2021 15:51:22</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/RequerimientoPagoApremio.aspx">
+      <publishTime>12/23/2021 12:14:58</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/RequerimientoPagoDesistimiento.aspx">
+      <publishTime>12/23/2021 12:33:42</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/RequerimientoPagoNotificacion.aspx">
+      <publishTime>12/20/2021 21:23:18</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/RequerimientoPagoNotificacionApremio.aspx">
+      <publishTime>12/23/2021 12:40:38</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/RequeriminetoPagoHonorarios.aspx">
+      <publishTime>12/20/2021 21:26:58</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/ResolucionFavorable.aspx">
+      <publishTime>12/03/2021 12:38:00</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/ResolucionTramite.aspx">
+      <publishTime>05/21/2021 09:44:38</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/ResultadosDiligenciamiento.aspx">
+      <publishTime>12/06/2021 09:19:10</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/SiNotificacionApremio.aspx">
+      <publishTime>12/13/2021 10:51:42</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/SolicitudCheque.aspx">
+      <publishTime>12/04/2021 19:42:02</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/SolicitudChequeApremio.aspx">
+      <publishTime>12/04/2021 19:44:30</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/SolicitudChequeDesistimiento.aspx">
+      <publishTime>12/04/2021 19:45:24</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/SolicitudChequeHonorarios.aspx">
+      <publishTime>12/04/2021 19:47:54</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/SolicitudChequeNotificacion.aspx">
+      <publishTime>12/04/2021 20:19:28</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/SolicitudChequeNotificacionApremio.aspx">
+      <publishTime>12/07/2021 16:23:50</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/TestimonioFacturacion.aspx">
+      <publishTime>12/03/2021 12:52:54</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/TransaccionVoluntaria.aspx">
+      <publishTime>12/03/2021 12:35:56</publishTime>
+    </File>
+    <File Include="Views/ProcesosJudiciales/ver.aspx">
+      <publishTime>12/14/2021 16:43:38</publishTime>
+    </File>
+    <File Include="Views/Seguridad/AsignacionAplicacion.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Seguridad/ModificarEstado.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Seguridad/ModificarModulo.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Seguridad/Seguridad1.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Seguridad/Seguridad2.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Seguridad/SeguridadMod.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/AsignacionLotes.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/AsignacionRolArea.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaALote.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaCuentas.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaEstado.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaEstatus.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaInmuebles.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaLote.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaMoneda.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaPep.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaPrestamos.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaTelefono.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Ayudas/AyudaVehiculo.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/CerrarSesion.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/EP_InformacionGeneral.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Inicio.aspx">
+      <publishTime>06/17/2021 18:08:26</publishTime>
+    </File>
+    <File Include="Views/Sesion/Logo.png">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoAreas.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoCuentas.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoEstado.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoEstatus.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoInmueble.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoLotes.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoMoneda.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoPep.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoPrestamos.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoRoles.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientosEP/Mant_epestados.aspx">
+      <publishTime>05/24/2021 22:29:48</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientosEP/MenuMantenimientos.aspx">
+      <publishTime>05/24/2021 22:29:48</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoTelefono.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MantenimientoVehiculos.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/MenuBarra.aspx">
+      <publishTime>06/06/2022 14:51:10</publishTime>
+    </File>
+    <File Include="Views/Sesion/MenuBarraMantenimientos.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Reporte.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Reportes/InformacionGeneralEP.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Reportes/ReporteEP.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/Reportes/ReporteT.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/ReportesAdmin/ReporteAdmin.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/ReportesAdmin/ReporteAdmin1.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/ReportesAdmin/ReporteAdmin2.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/Sesion/ReportesAdmin/ReporteAdmin3.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/test/administracion/agregarroles.aspx">
+      <publishTime>08/17/2021 15:48:04</publishTime>
+    </File>
+    <File Include="Views/test/administracion/agregarroles.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/administracion/agregarsucursal.aspx">
+      <publishTime>02/25/2022 19:30:58</publishTime>
+    </File>
+    <File Include="Views/test/administracion/agregarsucursal.cshtml">
+      <publishTime>02/25/2022 19:30:58</publishTime>
+    </File>
+    <File Include="Views/test/administracion/creararea.aspx">
+      <publishTime>08/17/2021 15:48:54</publishTime>
+    </File>
+    <File Include="Views/test/administracion/creararea.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/administracion/crearpregunta.aspx">
+      <publishTime>08/17/2021 15:49:26</publishTime>
+    </File>
+    <File Include="Views/test/administracion/crearpregunta.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/administracion/editapregunta.aspx">
+      <publishTime>08/17/2021 15:50:12</publishTime>
+    </File>
+    <File Include="Views/test/administracion/editapregunta.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/administracion/editararea.aspx">
+      <publishTime>08/17/2021 15:50:30</publishTime>
+    </File>
+    <File Include="Views/test/administracion/editararea.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/administracion/editarpregunta.aspx">
+      <publishTime>08/17/2021 15:51:04</publishTime>
+    </File>
+    <File Include="Views/test/administracion/editarpregunta.cshtml">
+      <publishTime>07/23/2021 08:00:38</publishTime>
+    </File>
+    <File Include="Views/test/administracion/editarrol.aspx">
+      <publishTime>08/17/2021 15:51:20</publishTime>
+    </File>
+    <File Include="Views/test/administracion/editarrol.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/administracion/editarsucursal.aspx">
+      <publishTime>08/17/2021 15:51:48</publishTime>
+    </File>
+    <File Include="Views/test/administracion/editarsucursal.cshtml">
+      <publishTime>02/25/2022 19:30:58</publishTime>
+    </File>
+    <File Include="Views/test/barra.aspx">
+      <publishTime>02/25/2022 19:30:58</publishTime>
+    </File>
+    <File Include="Views/test/barra.html">
+      <publishTime>07/22/2021 14:16:14</publishTime>
+    </File>
+    <File Include="Views/test/barra1.aspx">
+      <publishTime>08/17/2021 16:53:36</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/crear.aspx">
+      <publishTime>08/17/2021 15:52:12</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/crear.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/enviodeevaluaciones.aspx">
+      <publishTime>08/17/2021 15:53:12</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/enviodeevaluaciones.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/evaluacionesgeneraleditar.aspx">
+      <publishTime>08/17/2021 15:53:44</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/evaluacionesgeneraleditar.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/evaluacionesgenerales.aspx">
+      <publishTime>08/17/2021 15:55:10</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/evaluacionesgenerales.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/evaluacionesgeneralvista.aspx">
+      <publishTime>08/17/2021 15:55:24</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/evaluacionesgeneralvista.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/vistageneralevaluaciones.aspx">
+      <publishTime>08/17/2021 15:55:36</publishTime>
+    </File>
+    <File Include="Views/test/evaluaciones/vistageneralevaluaciones.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/Home/Index.aspx">
+      <publishTime>08/19/2021 23:47:36</publishTime>
+    </File>
+    <File Include="Views/test/Home/Index.cshtml">
+      <publishTime>07/26/2021 10:24:12</publishTime>
+    </File>
+    <File Include="Views/test/Home/inicio.aspx">
+      <publishTime>08/17/2021 15:58:26</publishTime>
+    </File>
+    <File Include="Views/test/Home/inicio.cshtml">
+      <publishTime>07/26/2021 10:24:12</publishTime>
+    </File>
+    <File Include="Views/test/Home/nuevo.aspx">
+      <publishTime>08/17/2021 09:01:56</publishTime>
+    </File>
+    <File Include="Views/test/reporte/porarea.aspx">
+      <publishTime>08/17/2021 16:00:52</publishTime>
+    </File>
+    <File Include="Views/test/reporte/porarea.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/reporte/porareageneral.aspx">
+      <publishTime>08/17/2021 16:01:16</publishTime>
+    </File>
+    <File Include="Views/test/reporte/porareageneral.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/reporte/poreva.aspx">
+      <publishTime>08/17/2021 16:02:04</publishTime>
+    </File>
+    <File Include="Views/test/reporte/poreva.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/reporte/porfec.aspx">
+      <publishTime>08/17/2021 16:02:52</publishTime>
+    </File>
+    <File Include="Views/test/reporte/porfec.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/reporte/porsuc.aspx">
+      <publishTime>08/17/2021 16:03:24</publishTime>
+    </File>
+    <File Include="Views/test/reporte/porsuc.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/resolver/editarusuario.aspx">
+      <publishTime>02/25/2022 19:30:58</publishTime>
+    </File>
+    <File Include="Views/test/resolver/editarusuario.cshtml">
+      <publishTime>02/25/2022 19:30:58</publishTime>
+    </File>
+    <File Include="Views/test/resolver/Index.aspx">
+      <publishTime>08/17/2021 16:51:38</publishTime>
+    </File>
+    <File Include="Views/test/resolver/Index.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/resolver/preguntas.aspx">
+      <publishTime>08/17/2021 16:09:16</publishTime>
+    </File>
+    <File Include="Views/test/resolver/preguntas.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/resolver/resolvertest.aspx">
+      <publishTime>08/17/2021 16:09:48</publishTime>
+    </File>
+    <File Include="Views/test/resolver/resolvertest.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/Shared/Error.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/Shared/navbar00.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/Shared/navbar01.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/Shared/_Layout.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/test/creaciontest.aspx">
+      <publishTime>08/17/2021 16:10:32</publishTime>
+    </File>
+    <File Include="Views/test/test/creaciontest.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/test/editar.aspx">
+      <publishTime>08/17/2021 16:11:00</publishTime>
+    </File>
+    <File Include="Views/test/test/editar.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/test/vistageneral.aspx">
+      <publishTime>08/17/2021 16:11:20</publishTime>
+    </File>
+    <File Include="Views/test/test/vistageneral.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/usuario/agregarusuario.aspx">
+      <publishTime>08/17/2021 16:11:52</publishTime>
+    </File>
+    <File Include="Views/test/usuario/agregarusuario.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/usuario/editarcolaborador.aspx">
+      <publishTime>02/25/2022 19:30:58</publishTime>
+    </File>
+    <File Include="Views/test/usuario/editarcolaborador.cshtml">
+      <publishTime>02/25/2022 19:30:58</publishTime>
+    </File>
+    <File Include="Views/test/usuario/editarusuario.aspx">
+      <publishTime>08/17/2021 16:22:10</publishTime>
+    </File>
+    <File Include="Views/test/usuario/editarusuario.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/usuario/prueba.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/usuario/registrocolaborador.aspx">
+      <publishTime>08/17/2021 16:21:24</publishTime>
+    </File>
+    <File Include="Views/test/usuario/registrocolaborador.cshtml">
+      <publishTime>07/26/2021 08:44:32</publishTime>
+    </File>
+    <File Include="Views/test/usuario/vistageneral.aspx">
+      <publishTime>08/17/2021 16:21:52</publishTime>
+    </File>
+    <File Include="Views/test/usuario/vistageneral.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/test/usuario/vistausuarios.aspx">
+      <publishTime>08/17/2021 16:22:00</publishTime>
+    </File>
+    <File Include="Views/test/usuario/vistausuarios.cshtml">
+      <publishTime>07/22/2021 08:54:58</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Views/WebForm1.aspx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>05/10/2021 16:18:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/30/2022 09:53:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

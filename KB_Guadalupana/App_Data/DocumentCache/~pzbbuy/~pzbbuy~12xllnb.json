@@ -1,0 +1,27 @@
+{
+  "CacheSourceKey": "pzbbuy",
+  "CachePdfKey": "pzbbuy/pzbbuy-npq31v.pdf",
+  "CacheXpzKey": "pzbbuy/pzbbuy-12xllnb.xpz",
+  "CacheInfoKey": "pzbbuy/pzbbuy-12xllnb.json",
+  "CacheCopyKey": null,
+  "Document": "Type=FileSystem;File=\"6-pdf de prueba.pdf\";Location=\"Type=Physical;Path=C:\\Users\\ecasasola\\Documents\\GitHub\\GestorDocumentos\\KB_Guadalupana\\Views\\Procesos\\Subidos\"",
+  "DocumentFileName": "6-pdf de prueba.pdf",
+  "DownloadFileName": null,
+  "InputOptions": {
+    "Format": "Pdf",
+    "Password": null
+  },
+  "PdfOutputOptions": {
+    "Watermarks": [],
+    "FastWebViewEnabled": false,
+    "Password": null,
+    "Attachments": [],
+    "Format": "Pdf"
+  },
+  "XpzOutputOptions": {
+    "Password": "pzbbuy",
+    "HighQualityEnabled": false,
+    "Format": "Xpz"
+  },
+  "Attachments": []
+}

@@ -21,6 +21,8 @@ namespace Login_Web
         Sentencia sn = new Sentencia();
         Logica lg = new Logica();
         encrip en = new encrip();
+        claseComprobadora ccp = new claseComprobadora();
+        bitacoragen bit = new bitacoragen();
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -86,9 +88,15 @@ namespace Login_Web
                         if (contra == en.Encrypt(PSUser.Text)) {
 
                             Session["Nombre"] = sn.nombreuser(IdUser.Text); ;
-                            Response.Redirect("Views/Sesion/MenuBarra.aspx");
+                            string randomstring = ccp.cadenarandom();
+                            string token = ccp.Encrypt(randomstring);
+                            bit.bitacoraing(IdUser.Text, "Inicio de sesion");
+                            sn.Insertar("INSERT INTO gen_navegacion ( token,usuario,estado) VALUES ('" + token + "','" + IdUser.Text + "' , 1)");
                             PSUser.Text = "";
                             IdUser.Text = "";
+                            Response.Redirect("Views/Sesion/MenuBarra.aspx");
+                      
+
                         }
                         else
                         {
@@ -96,6 +104,7 @@ namespace Login_Web
                             //usuario o contraseña equivocado
                             PSUser.Text = "";
                             IdUser.Text = "";
+                            bit.bitacoraing(IdUser.Text, "Contraseña equivocada");
                             String script = "alert('usuario o contraseña equivocados ');";
                             ScriptManager.RegisterStartupScript(this, GetType().GetType(), "alertMessage", script, true);
                         }
@@ -103,9 +112,10 @@ namespace Login_Web
                     else {
 
                         //usuario o contraseña equivocado
-
+                        bit.bitacoraing(IdUser.Text, "Usuario equivocado");
                         String script = "alert('usuario o contraseña equivocados ');";
                         ScriptManager.RegisterStartupScript(this, GetType().GetType(), "alertMessage", script, true);
+
                     }
                    
 

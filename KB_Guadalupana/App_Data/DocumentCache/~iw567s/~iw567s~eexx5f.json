@@ -1,0 +1,27 @@
+{
+  "CacheSourceKey": "iw567s",
+  "CachePdfKey": "iw567s/iw567s-npq31v.pdf",
+  "CacheXpzKey": "iw567s/iw567s-eexx5f.xpz",
+  "CacheInfoKey": "iw567s/iw567s-eexx5f.json",
+  "CacheCopyKey": null,
+  "Document": "Type=FileSystem;File=\"11-pdf de prueba.pdf\";Location=\"Type=Physical;Path=C:\\Users\\ecasasola\\Documents\\GitHub\\GestorDocumentos\\KB_Guadalupana\\Views\\Procesos\\Subidos\"",
+  "DocumentFileName": "11-pdf de prueba.pdf",
+  "DownloadFileName": null,
+  "InputOptions": {
+    "Format": "Pdf",
+    "Password": null
+  },
+  "PdfOutputOptions": {
+    "Watermarks": [],
+    "FastWebViewEnabled": false,
+    "Password": null,
+    "Attachments": [],
+    "Format": "Pdf"
+  },
+  "XpzOutputOptions": {
+    "Password": "iw567s",
+    "HighQualityEnabled": false,
+    "Format": "Xpz"
+  },
+  "Attachments": []
+}

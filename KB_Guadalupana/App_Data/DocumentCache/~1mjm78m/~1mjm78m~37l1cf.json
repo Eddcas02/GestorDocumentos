@@ -1,0 +1,27 @@
+{
+  "CacheSourceKey": "1mjm78m",
+  "CachePdfKey": "1mjm78m/1mjm78m-npq31v.pdf",
+  "CacheXpzKey": "1mjm78m/1mjm78m-37l1cf.xpz",
+  "CacheInfoKey": "1mjm78m/1mjm78m-37l1cf.json",
+  "CacheCopyKey": null,
+  "Document": "Type=FileSystem;File=\"10-pdf de prueba.pdf\";Location=\"Type=Physical;Path=C:\\Users\\ecasasola\\Documents\\GitHub\\GestorDocumentos\\KB_Guadalupana\\Views\\Procesos\\Subidos\"",
+  "DocumentFileName": "10-pdf de prueba.pdf",
+  "DownloadFileName": null,
+  "InputOptions": {
+    "Format": "Pdf",
+    "Password": null
+  },
+  "PdfOutputOptions": {
+    "Watermarks": [],
+    "FastWebViewEnabled": false,
+    "Password": null,
+    "Attachments": [],
+    "Format": "Pdf"
+  },
+  "XpzOutputOptions": {
+    "Password": "1mjm78m",
+    "HighQualityEnabled": false,
+    "Format": "Xpz"
+  },
+  "Attachments": []
+}
