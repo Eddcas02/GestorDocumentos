@@ -3947,6 +3947,27 @@ namespace KB_Guadalupana.Controllers
             }
         }
 
+        public void Insertar(string sql)
+        {
+
+            using (MySqlConnection sqlCon = new MySqlConnection(conexiongeneral.cadenadeconexiongeneral()))
+            {
+
+                try
+                {
+
+                    sqlCon.Open();
+                    MySqlCommand command = new MySqlCommand(sql, sqlCon);
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                }
+                catch (Exception ex) { Console.WriteLine(ex.Message.ToString() + " \nERROR EN CONSULTA\n -"); }
+
+            }
+
+
+        }
+
         public string[] consultarcorrelativoepcif(string cifcolaborador)
         {
             using (MySqlConnection sqlCon = new MySqlConnection(conexiongeneral.cadenadeconexiongeneral()))

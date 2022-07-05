@@ -1,0 +1,31 @@
+{
+  "CacheSourceKey": "1vwguyn",
+  "CachePdfKey": "1vwguyn/1vwguyn-1vaiuo.pdf",
+  "CacheXpzKey": "1vwguyn/1vwguyn-kdrv8u.xpz",
+  "CacheInfoKey": "1vwguyn/1vwguyn-kdrv8u.json",
+  "CacheCopyKey": null,
+  "Document": "Type=FileSystem;File=\"4-Cambios Pagos 3.docx\";Location=\"Type=Physical;Path=C:\\Users\\ecasasola\\Documents\\GitHub\\GestorDocumentos\\KB_Guadalupana\\Views\\Procesos\\Subidos\"",
+  "DocumentFileName": "4-Cambios Pagos 3.docx",
+  "DownloadFileName": null,
+  "InputOptions": {
+    "$type": "GleamTech.DocumentUltimate.WordProcessingInputOptions, GleamTech.DocumentUltimate",
+    "FieldFileName": "4-Cambios Pagos 3.docx",
+    "UpdateFields": true,
+    "Encoding": null,
+    "Format": "Docx",
+    "Password": null
+  },
+  "PdfOutputOptions": {
+    "Watermarks": [],
+    "FastWebViewEnabled": false,
+    "Password": null,
+    "Attachments": [],
+    "Format": "Pdf"
+  },
+  "XpzOutputOptions": {
+    "Password": "1vwguyn",
+    "HighQualityEnabled": false,
+    "Format": "Xpz"
+  },
+  "Attachments": []
+}

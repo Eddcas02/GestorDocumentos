@@ -401,7 +401,7 @@ namespace KB_Guadalupana.Controllers
             }
         }
 
-        public DataSet categorias()
+        public DataSet categorias(string user)
         {
             DataSet ds1 = new DataSet();
             using (MySqlConnection sqlCon = new MySqlConnection(conexiongeneral.cadenadeconexiongeneral()))
@@ -411,7 +411,7 @@ namespace KB_Guadalupana.Controllers
                 {
                     //"SELECT * FROM " + tabla + " where" + campo + "='" + dato + "';"
                     sqlCon.Open();
-                    MySqlCommand command = new MySqlCommand("SELECT pro_nombre AS Categoria FROM pro_categoria ORDER BY idpro_categoria ASC", sqlCon);
+                    MySqlCommand command = new MySqlCommand("SELECT a.pro_nombre as Categoria FROM pro_categoria as a INNER JOIN pro_categoriausuario as b on a.idpro_categoria = b.id_procategoria INNER JOIN gen_usuario as c ON  b.codgenusuario = c.codgenusuario WHERE b.codgenusuario = '"+user+"'  ORDER BY a.idpro_categoria ASC;", sqlCon);
                     MySqlDataAdapter ds = new MySqlDataAdapter();
                     ds.SelectCommand = command;
                     ds.Fill(ds1);

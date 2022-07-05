@@ -1,0 +1,31 @@
+{
+  "CacheSourceKey": "cxys9r",
+  "CachePdfKey": "cxys9r/cxys9r-1tuyhsb.pdf",
+  "CacheXpzKey": "cxys9r/cxys9r-196rgm4.xpz",
+  "CacheInfoKey": "cxys9r/cxys9r-196rgm4.json",
+  "CacheCopyKey": null,
+  "Document": "Type=FileSystem;File=\"5-Documento de prueba.docx\";Location=\"Type=Physical;Path=C:\\Users\\ecasasola\\Documents\\GitHub\\GestorDocumentos\\KB_Guadalupana\\Views\\Procesos\\Subidos\"",
+  "DocumentFileName": "5-Documento de prueba.docx",
+  "DownloadFileName": null,
+  "InputOptions": {
+    "$type": "GleamTech.DocumentUltimate.WordProcessingInputOptions, GleamTech.DocumentUltimate",
+    "FieldFileName": "5-Documento de prueba.docx",
+    "UpdateFields": true,
+    "Encoding": null,
+    "Format": "Docx",
+    "Password": null
+  },
+  "PdfOutputOptions": {
+    "Watermarks": [],
+    "FastWebViewEnabled": false,
+    "Password": null,
+    "Attachments": [],
+    "Format": "Pdf"
+  },
+  "XpzOutputOptions": {
+    "Password": "cxys9r",
+    "HighQualityEnabled": false,
+    "Format": "Xpz"
+  },
+  "Attachments": []
+}

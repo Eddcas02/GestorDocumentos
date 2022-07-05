@@ -48,7 +48,7 @@ namespace KB_Guadalupana.Views.Procesos
       
 
             DataSet categoria = new DataSet();
-            categoria = sn.categorias();
+            categoria = sn.categorias(sn.obteneridusuario( Convert.ToString(Session["sesion_usuario"])));
             RepeaterCategoria.DataSource = categoria;
             RepeaterCategoria.DataBind();
 
