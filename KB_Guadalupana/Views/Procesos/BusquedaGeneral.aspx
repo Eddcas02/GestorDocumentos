@@ -205,7 +205,7 @@
 
                   <div class="linea"></div>
 
-                <div class="encabezado">
+                <div class="encabezado" >
                     <div class="formato3">
                         <label class="titulos" style="color:#003563"><b>Nombre del documento</b></label>
                         <div style="margin-top:10px;" class="formato">
@@ -223,7 +223,7 @@
                 </div>
                   <div class="linea"></div><br /><br />
 
-                 <div class="encabezado" style="width:140%">
+                 <div class="encabezado" style="font-size:14px; width:140%">
                     <div style="justify-content: center;display:flex" class="formato">
                         <div style="overflow: auto; height: 750px">
                         <asp:GridView ID="gridViewDocumentos" runat="server" AutoGenerateColumns="False" CssClass="tabla"
@@ -264,9 +264,16 @@
                                        <asp:Label ID="lblorigen" Text='<%# Eval("Origen") %>' runat="server" />
                                     </ItemTemplate>
                                 </asp:TemplateField>
-                                <asp:ButtonField   Text="Ver Documento" ItemStyle-CssClass="fas fa-search" CommandName="Select" ItemStyle-Width="90px" ControlStyle-ForeColor="Black">
+                                  <asp:TemplateField >
+                                      <ItemTemplate>
+                                 <asp:LinkButton ID="verdoc2"  runat="server" ItemStyle-CssClass="celda fas fa-angle-double-right" CommandName="Select" ItemStyle-Width="90px" >
+                                      <asp:Image ID="imgaver2" runat="server" ImageUrl="../Imagenes/verDoc.png"  AlternateText="Ver Documento" ToolTip="Ver Documento" />
+                               </asp:LinkButton>
+                                          </ItemTemplate>
+                                </asp:TemplateField>
+                                <%--<asp:ButtonField   Text="Ver Documento" ItemStyle-CssClass="fas fa-search" CommandName="Select" ItemStyle-Width="90px" ControlStyle-ForeColor="Black">
                                     <ItemStyle Width="135px" ForeColor="Black"></ItemStyle>
-                                </asp:ButtonField>
+                                </asp:ButtonField>--%>
                             </Columns>
                              <HeaderStyle CssClass="prueba" Height="23px" ForeColor="White" BackColor="#003563"></HeaderStyle>
                         </asp:GridView>
