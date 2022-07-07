@@ -1,0 +1,31 @@
+{
+  "CacheSourceKey": "1ajc2ah",
+  "CachePdfKey": "1ajc2ah/1ajc2ah-1b7y0mm.pdf",
+  "CacheXpzKey": "1ajc2ah/1ajc2ah-5ur9n4.xpz",
+  "CacheInfoKey": "1ajc2ah/1ajc2ah-5ur9n4.json",
+  "CacheCopyKey": null,
+  "Document": "Type=FileSystem;File=\"15-5. RG-Registro desarrollo de software.docx\";Location=\"Type=Physical;Path=C:\\Users\\ecasasola\\Documents\\GitHub\\GestorDocumentos\\KB_Guadalupana\\Views\\Procesos\\Subidos\"",
+  "DocumentFileName": "15-5. RG-Registro desarrollo de software.docx",
+  "DownloadFileName": null,
+  "InputOptions": {
+    "$type": "GleamTech.DocumentUltimate.WordProcessingInputOptions, GleamTech.DocumentUltimate",
+    "FieldFileName": "15-5. RG-Registro desarrollo de software.docx",
+    "UpdateFields": true,
+    "Encoding": null,
+    "Format": "Docx",
+    "Password": null
+  },
+  "PdfOutputOptions": {
+    "Watermarks": [],
+    "FastWebViewEnabled": false,
+    "Password": null,
+    "Attachments": [],
+    "Format": "Pdf"
+  },
+  "XpzOutputOptions": {
+    "Password": "1ajc2ah",
+    "HighQualityEnabled": false,
+    "Format": "Xpz"
+  },
+  "Attachments": []
+}

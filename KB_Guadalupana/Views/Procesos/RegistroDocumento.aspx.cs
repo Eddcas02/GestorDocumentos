@@ -256,36 +256,62 @@ namespace KB_Guadalupana.Views.Procesos
                     string ext = System.IO.Path.GetExtension(FileUpload1.FileName);
                     ext = ext.ToLower();
 
-                    if (ext == ".pdf" || ext == ".tiff" || ext == ".tif" || ext == ".docx" || ext == ".xlsx" || ext == ".xls" || ext == ".jpeg" || ext == ".jpg" || ext == ".png" || ext ==".csv")
-                    {
-                        string siguiente = sn.siguiente("pro_registro", "idpro_registro");
-                        documento = "Subidos/" + siguiente + '-' + FileUpload1.FileName;
-                        string nombredoc = siguiente + '-' + FileUpload1.FileName;
-                        string usuario = Session["sesion_usuario"] as string;
-                        string idusuario = sn.obteneridusuario(usuario);
-                        sn.insertardocumento(siguiente, TipoDocumento.SelectedValue, Codigo.Text, NombreDocumento.Text, nombredoc, documento, Version.Text, FechaAprobacion.Text, Estado.SelectedValue, Origen.SelectedValue, UsuarioDirigido.SelectedValue, Categoria.SelectedValue, Subcategoria.SelectedValue, idusuario, TipoRestriccion.SelectedValue);
-                        FileUpload1.SaveAs(Server.MapPath("Subidos/" + siguiente + '-' + FileUpload1.FileName));
-                        ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('Se guardó el documento exitosamente');", true);
-                        llenargridviewdocumentos();
+                    string versionvar = sn.obtenerversion(Codigo.Text);
 
-                        Codigo.Text = "";
-                        NombreDocumento.Text = "";
-                        Version.Text = "";
-                        FechaAprobacion.Text = "";
-                        Estado.SelectedIndex = 0;
-                        Origen.SelectedIndex = 0;
-                        UsuarioDirigido.SelectedIndex = 0;
-                        TipoRestriccion.SelectedIndex = 0;
-                        Categoria.SelectedIndex = 0;
-                        Subcategoria.SelectedIndex = 0;
-                        
+                    if (versionvar != Version.Text) {
+
+                        if (
+
+                             Codigo.Text != "" && NombreDocumento.Text != "" &&
+                        Version.Text != "" &&
+                        FechaAprobacion.Text != "" &&
+                        Estado.SelectedIndex != 0 &&
+                        Origen.SelectedIndex != 0 &&
+                        UsuarioDirigido.SelectedIndex != 0 &&
+                        TipoRestriccion.SelectedIndex != 0 &&
+                        Categoria.SelectedIndex != 0 &&
+                        Subcategoria.SelectedIndex != 0
+                            
+                            
+                            ) {
+
+                            if (ext == ".pdf" || ext == ".tiff" || ext == ".tif" || ext == ".docx" || ext == ".xlsx" || ext == ".xls" || ext == ".jpeg" || ext == ".jpg" || ext == ".png" || ext == ".csv")
+                            {
+                                string siguiente = sn.siguiente("pro_registro", "idpro_registro");
+                                documento = "Subidos/" + siguiente + '-' + FileUpload1.FileName;
+                                string nombredoc = siguiente + '-' + FileUpload1.FileName;
+                                string usuario = Session["sesion_usuario"] as string;
+                                string idusuario = sn.obteneridusuario(usuario);
+                                sn.insertardocumento(siguiente, TipoDocumento.SelectedValue, Codigo.Text, NombreDocumento.Text, nombredoc, documento, Version.Text, FechaAprobacion.Text, Estado.SelectedValue, Origen.SelectedValue, UsuarioDirigido.SelectedValue, Categoria.SelectedValue, Subcategoria.SelectedValue, idusuario, TipoRestriccion.SelectedValue);
+                                FileUpload1.SaveAs(Server.MapPath("Subidos/" + siguiente + '-' + FileUpload1.FileName));
+                                ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('Se guardó el documento exitosamente');", true);
+                                llenargridviewdocumentos();
+
+                                Codigo.Text = "";
+                                NombreDocumento.Text = "";
+                                Version.Text = "";
+                                FechaAprobacion.Text = "";
+                                Estado.SelectedIndex = 0;
+                                Origen.SelectedIndex = 0;
+                                UsuarioDirigido.SelectedIndex = 0;
+                                TipoRestriccion.SelectedIndex = 0;
+                                Categoria.SelectedIndex = 0;
+                                Subcategoria.SelectedIndex = 0;
 
 
-                    }   
-                    else
-                    {
-                        ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('Formato no permitido');", true);
+
+                            }
+                            else
+                            {
+                                ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('Formato no permitido');", true);
+                            }
+                        }
+                        else { ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('La versión del documento ya fue registrada, elija otra versión');", true); }
                     }
+                    else {
+                        ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('Debe llenar todos los campos');", true);
+                    }
+                
                 }
             }
             else
