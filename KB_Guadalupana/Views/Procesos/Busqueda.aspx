@@ -232,7 +232,7 @@
                 </div>
                   <div class="linea"></div><br /><br />
 
-                 <div class="encabezado" style="width:140%">
+                 <div class="encabezado" style="width:150%; font-size:14px">
                     <div style="justify-content: center;display:flex" class="formato">
                         <div>
                         <asp:GridView ID="gridViewDocumentos" runat="server" AutoGenerateColumns="False" CssClass="tabla"
@@ -279,7 +279,7 @@
                                     <ItemTemplate>
                                         <asp:LinkButton ID="iddoc"  runat="server" OnClick="iddoc_Click" >
                                            
-                                            <asp:Image ID="imgver" runat="server" ImageUrl="../Imagenes/verDoc.png"  AlternateText="Ver Documento" ToolTip="Ver Documeto" />
+                                            <asp:Image ID="imgver" runat="server" ImageUrl="../Imagenes/verDoc.png"  AlternateText="Ver Documento" ToolTip="Ver Documento" />
                                         </asp:LinkButton>
                                    <asp:LinkButton ID="iddocdown"  runat="server" OnClick="iddocdown_Click"   >
                                        <asp:Image ID="imgdescarga" runat="server"  AlternateText="Descargar" ToolTip="Descargar"/>

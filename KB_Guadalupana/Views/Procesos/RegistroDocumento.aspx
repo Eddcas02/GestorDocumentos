@@ -243,7 +243,7 @@
                 </div>
                  <div class="linea"></div><br /><br />
 
-                <div class="encabezado" style="width:140%">
+                <div class="encabezado" style="width:150%; font-size:14px">
                     <div style="justify-content: center;display:flex" class="formato">
                         <div>
                         <asp:GridView ID="gridViewDocumentos" runat="server" AutoGenerateColumns="False" CssClass="tabla"
@@ -251,7 +251,7 @@
                              <Columns>
                                <asp:TemplateField ControlStyle-CssClass="diseño" visible="false" HeaderText="Código">
                                     <ItemTemplate>
-                                       <asp:Label ID="lblid" Text='<%# Eval("Id") %>' runat="server" />
+                                       <asp:Label ID="lblid" Width="100px" Text='<%# Eval("Id") %>' runat="server" />
                                     </ItemTemplate>
                                 </asp:TemplateField>
                                 <asp:TemplateField ControlStyle-CssClass="diseño" HeaderText="Código">
@@ -266,7 +266,7 @@
                                 </asp:TemplateField>
                                   <asp:TemplateField ControlStyle-CssClass="diseño"  HeaderText="Nombre documento">
                                     <ItemTemplate>
-                                       <asp:Label ID="lblnombredoc" Width="200px" Text='<%# Eval("Nombre") %>' runat="server" />
+                                       <asp:Label ID="lblnombredoc" Width="180px" Text='<%# Eval("Nombre") %>' runat="server" />
                                     </ItemTemplate>
                                 </asp:TemplateField>
                                    <asp:TemplateField ControlStyle-CssClass="diseño"  HeaderText="Versión">
@@ -309,9 +309,15 @@
                                        <asp:Label ID="lblsubcategoria" Text='<%# Eval("Subcategoria") %>' runat="server" />
                                     </ItemTemplate>
                                 </asp:TemplateField>
-                                <asp:ButtonField   Text="Ver Documento" ItemStyle-CssClass="celda fas fa-angle-double-right" CommandName="Select" ItemStyle-Width="90px" ControlStyle-ForeColor="Black">
-                                    <ItemStyle Width="80px" ForeColor="Black"></ItemStyle>
-                                </asp:ButtonField>
+                                 <asp:TemplateField >
+                                      <ItemTemplate>
+<%--                                <asp:ButtonField   Text="Ver Documento" ItemStyle-CssClass="celda fas fa-angle-double-right" CommandName="Select" ItemStyle-Width="90px" ControlStyle-ForeColor="Black" >--%>
+                                  <asp:LinkButton ID="verdoc"  runat="server" ItemStyle-CssClass="celda fas fa-angle-double-right" CommandName="Select" ItemStyle-Width="90px" >
+                                      <asp:Image ID="imgaver" runat="server" ImageUrl="../Imagenes/verDoc.png"  AlternateText="Ver Documento" ToolTip="Ver Documento" />
+                               </asp:LinkButton>
+                                      <%-- </asp:ButtonField>--%>
+                                     </ItemTemplate>
+                                </asp:TemplateField>
                             </Columns>
                              <HeaderStyle CssClass="prueba" Height="23px" ForeColor="White" BackColor="#003563"></HeaderStyle>
                         </asp:GridView>
